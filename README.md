@@ -3,7 +3,7 @@ In-line pop-up menus of commands that you are trying to master or thought you ma
 [Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs that users can build and customize.
 The blue colored letters below are mapped to commands that are invoked by entering the letter(s).
 
-These hydra were inspire by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
+These hydra were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
 The idea here is to use hydras to display this list and related lists.
 The use of the hydra has a low-energy barrier.
 Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
@@ -13,7 +13,10 @@ Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
 
 ## Installation
 
-Install whereever you see fit.
+Install whereever you see fit. 
+My emacs directory (i.e., `~/emacs30`) is not a hidden folder, unlike what is recommended.
+I store my hydras in a subfolder called `my-hydras` (i.e., `~/emacs30/my-hydras`).
+
 
 ```elisp
 git clone https://github.com/MooersLab/emacs-learning-spiral-hydra.git
@@ -28,8 +31,6 @@ It should work with version 29 of GNU Emacs.
 
 
 ### Configuration
-
-
 
 The configuration below is for the users of the `use-package` package system for managing Emacs packages.
 
@@ -75,9 +76,7 @@ This hydra is a to-do list of skills that I am trying to master.
 -----------------------------------------------------------------------------
 LaTeX workflow in Emacs
 Voice control in Emacs
-Make snippets of all useful code blocks in org-mode.
-lfortran in code-blocks via jupyter org-babel language
-
+Make snippets of useful code blocks in org-mode.
 
 ^----------------------------------------------------------------------------
 _km_ learning spral: keybindings mastered
