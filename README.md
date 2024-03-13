@@ -1,18 +1,32 @@
 # Hydras to promote mastery of Emacs
 In line pop-up menus of commands that you are trying to master or thought you mastered.
+There hydra were inspire by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
+The idea here is to use hydras to display this list and related lists.
+The use of the hydra has a low-energy barrier.
+Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
+
 
 
 
 ## Installation
 
+Install whereever you see fit.
+
 ```elisp
 git clone https://github.com/MooersLab/emacs-learning-spiral-hydra.git
 ```
 
-### configuration
+### Requirements
 
 Requries the hydra package from MELPA.
 I also use the pretty-hydra package.
+I use version 30.0.5 of GNU Emacs on a Mac.
+It should work with version 29 of GNU Emacs.
+
+
+### Configuration
+
+
 
 The configuration below is for the users of the `use-package` package system for managing Emacs packages.
 
