@@ -122,7 +122,7 @@ _q_ quit
 (defhydra hydra-of-learning-spiral (:hint nil)
 "
  ^Commands trying to master
- ------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------
  C-c =                 Use in auctex-mode to display TOC of document in separate buffer
  C-c d                 Display pop-up with info about text file including word count
  C-h l                 Display list of last commands
@@ -136,7 +136,7 @@ _q_ quit
  M-x elispdoc-process-elisp-to-doc-buffer
  
 
- ^------------------------------------------------------------------------------
+ ^--------------------------------------------------------------------------------------
  
  _km_ learning spral: keybindings mastered
  _c_ learning spiral: concepts trying to master
@@ -147,7 +147,7 @@ _q_ quit
  _rh_ reload hydras
  _z_ Return to parent hdyra-of-hydras
  _q_ quit
- ^------------------------------------------------------------------------------
+ ^---------------------------------------------------------------------------------------
  "
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue) 
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue) 
