@@ -8,7 +8,7 @@ The idea here is to use hydras to display this list and related lists.
 The use of the hydra has a low-energy barrier.
 Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
 
-<p align="center"><img src="./images/master-buffer.png" alt="HTML5 Icon" style="width:612px"></p>
+<p align="center"><img src="./images/master-buffer.png" alt="HTML5 Icon" style="width:800px"></p>
 
 
 ## Installation
@@ -65,7 +65,7 @@ It has commands for calling the other hydras above it.
 
 ## hydra-of-learning-spiral-concepts-mastered
 
-<p align="center"><img src="images/concepts.png" /></p>
+<p align="center"><img src="images/concepts.png" alt="HTML5 Icon" style="width:600px"  /></p>
 
 
 This hydra is a to-do list of skills that I am trying to master.
@@ -97,7 +97,7 @@ _q_ quit
 
 ## hydra-of-learning-spiral-keybindings-mastered
 
-<p align="center"><img src="images/keybindings.png" /></p>
+<p align="center"><img src="images/keybindings.png" alt="HTML5 Icon" style="width:600px" /></p>
 
 This hydra in a list of keybinding that I thought I had mastered.
 I list these as a reality check and as a reminder after long gaps in use of these keybindings
