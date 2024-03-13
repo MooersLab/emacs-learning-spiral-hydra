@@ -65,7 +65,7 @@ It has commands for calling the other hydras above it.
 
 ## hydra-of-learning-spiral-concepts-mastered
 
-<p align="center"><img src="images/concepts.png" alt="HTML5 Icon" style="width:600px"  /></p>
+<p align="center"><img src="images/concepts.png" alt="HTML5 Icon" style="width:400px"  /></p>
 
 
 This hydra is a to-do list of skills that I am trying to master.
@@ -149,7 +149,7 @@ _q_ quit
 
 ## hydra-of-learning-spiral-packages-mastered
 
-<p align="center"><img src="images/packages.png" /></p>
+<p align="center"><img src="images/packages.png" alt="HTML5 Icon" style="width:400px" /></p>
 
 ```elisp
 (defhydra hydra-of-learning-spiral-packages-mastered (:hint nil)
