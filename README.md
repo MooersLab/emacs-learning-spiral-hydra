@@ -1,7 +1,7 @@
 # Hydras to promote mastery of Emacs
 In-line pop-up menus of commands that you are trying to master or thought you mastered.
 [Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs that users can build and customize.
-The colored letters are mapped to commands that are invoked by entering the letter(s).
+The blue colored letters below are mapped to commands that are invoked by entering the letter(s).
 
 These hydra were inspire by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
 The idea here is to use hydras to display this list and related lists.
