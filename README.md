@@ -8,7 +8,7 @@ The idea here is to use hydras to display this list and related lists.
 The use of the hydra has a low-energy barrier.
 Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
 
-<p align="center"><img src="images/master-buffer.png" /></p>
+<p align="center"><img src="./images/master-buffer.png" alt="HTML5 Icon" style="width:612px"></p>
 
 
 ## Installation
