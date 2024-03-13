@@ -73,8 +73,7 @@ _q_ quit
 
 ## hydra-of-learning-spiral-keybindings-mastered
 This hydra in a list of keybinding that I thought I had mastered.
-I list these as reality check and as a reminder after long gaps
-in use of these keybindings
+I list these as a reality check and as a reminder after long gaps in use of these keybindings
 
 ```elisp
 (defhydra hydra-of-learning-spiral-keybindings-mastered (:hint nil)
