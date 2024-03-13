@@ -64,6 +64,9 @@ It has commands for calling the other hydras above it.
 
 ## hydra-of-learning-spiral-concepts-mastered
 
+<p align="center"><img src="images/concepts.png" /></p>
+
+
 This hydra in a to-do list of skills that I am trying to master.
 ```elisp
 (defhydra hydra-of-learning-spiral-concepts-mastered (:hint nil)
@@ -94,6 +97,9 @@ _q_ quit
 
 
 ## hydra-of-learning-spiral-keybindings-mastered
+
+<p align="center"><img src="images/keybindings.png" /></p>
+
 This hydra in a list of keybinding that I thought I had mastered.
 I list these as a reality check and as a reminder after long gaps in use of these keybindings
 
@@ -142,6 +148,9 @@ _q_ quit
 
 
 ## hydra-of-learning-spiral-packages-mastered
+
+<p align="center"><img src="images/packages.png" /></p>
+
 ```elisp
 (defhydra hydra-of-learning-spiral-packages-mastered (:hint nil)
 "
