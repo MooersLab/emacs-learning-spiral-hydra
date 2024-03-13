@@ -67,7 +67,7 @@ It has commands for calling the other hydras above it.
 <p align="center"><img src="images/concepts.png" /></p>
 
 
-This hydra in a to-do list of skills that I am trying to master.
+This hydra is a to-do list of skills that I am trying to master.
 ```elisp
 (defhydra hydra-of-learning-spiral-concepts-mastered (:hint nil)
 "
@@ -124,6 +124,7 @@ C-y                    Paste
 C-w                    Cut
 s-c                    Copy
 C-c 0                  Display master hydra
+C-c 1                  Display learning spiral hdyra
 
 M-x eval-buffer
 M-x reload-hdyra
