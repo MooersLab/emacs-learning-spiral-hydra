@@ -3,11 +3,11 @@
 
 
 # Hydras to promote mastery of Emacs
-In-line pop-up menus of commands that you are trying to master or thought you mastered.
+In-line pop-up menus of commands that you want to master or thought you mastered.
 [Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs that users can build and customize.
 The blue colored letters below are mapped to commands that are invoked by entering the letter(s).
 
-These hydra were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
+These hydras were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
 The idea here is to use hydras to display this list and related lists.
 The use of the hydra has a low-energy barrier.
 Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
@@ -17,7 +17,7 @@ Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
 
 ## Installation
 
-Install whereever you see fit. 
+Install where you see fit. 
 My emacs directory (i.e., `~/emacs30`) is not a hidden folder, unlike what is recommended.
 I store my hydras in a subfolder called `my-hydras` (i.e., `~/emacs30/my-hydras`).
 
@@ -28,17 +28,17 @@ git clone https://github.com/MooersLab/emacs-learning-spiral-hydra.git
 
 ### Requirements
 
-Requries the hydra package from MELPA.
-I also use the pretty-hydra package.
-I use version 30.0.5 of GNU Emacs on a Mac.
-It should work with version 29 of GNU Emacs.
+Requries the `hydra` package from MELPA.
+I also use the `pretty-hydra` package.
+I use version 30.0.5 of GNU Emacs on an intel Mac.
+It should work with version 29 of GNU Emacs and perhaps earlier versions of Emacs.
 
 
 ### Configuration
 
 The configuration below is for the users of the `use-package` package system for managing Emacs packages.
 
-- Customize file path. I store the file learning-spiral-hydra.el inside of the folder `~/emacs30/my-hydras/`
+- Customize the file path. I store the file learning-spiral-hydra.el inside of the folder `~/emacs30/my-hydras/`
 - Customize the keybinding below if it conflicts. Check by entering `C-h k C-c 1`, where `C` stands for the Control key and the `-` means press the Control key with the second key simultaneously.
 - Customize the content of each hydra to meet your learning objectives.
 - Add the following lines to your init.el file.
@@ -58,7 +58,7 @@ You may have to delete the following line from each hdyra if you lack a master h
 
 # Learning sprial hydra
 Below is a literate programming document.
-It was generated from a buffer containing the hydras by using the elispdoc package found [here](https://github.com/benleis1/elispdoc).
+It was generated from a buffer containing the hydras by using the `elispdoc` package found [here](https://github.com/benleis1/elispdoc).
 
 This is a nested set of hydras.
 The hydra at the bottom is the master hydra: hydra-of-learning-spiral.
@@ -185,7 +185,7 @@ _q_ quit
 
 ## hydra-of-learning-spiral
 This is the master hydra that lists the commands that I am trying to master.
-It also calls subsidiary hydras that list
+This hydrad also calls subsidiary hydras that list
 - the keybindings that I think I have mastered,
 - the concepts that I am trying to master
 - the packages that I am trying to master.
