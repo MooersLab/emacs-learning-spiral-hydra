@@ -17,9 +17,7 @@
 -----------------------------------------------------------------------------
 LaTeX workflow in Emacs
 Voice control in Emacs
-Make snippets of all useful code blocks in org-mode.
-lfortran in code-blocks via jupyter org-babel language
-
+Snippets of code blocks in org-mode.
 
 ^----------------------------------------------------------------------------
 _km_ learning spral: keybindings mastered
@@ -62,6 +60,7 @@ C-y                    Paste
 C-w                    Cut
 s-c                    Copy
 C-c 0                  Display master hydra
+C-c 1                  Display learning spiral hydras
 
 M-x eval-buffer
 M-x reload-hdyra                 
