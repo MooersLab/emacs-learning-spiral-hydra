@@ -1,14 +1,33 @@
-# emacs-learning-spiral-hydra
+# Hydras to promote mastery of Emacs
 In line pop-up menus of commands that you are trying to master or thought you mastered.
 
 
 
 ## Installation
 
-git clone 
+```elisp
+git clone https://github.com/MooersLab/emacs-learning-spiral-hydra.git
+```
 
+### configuration
 
+Requries the hydra package from MELPA.
+I also use the pretty-hydra package.
 
+Customize file paths and keybinding if it conflicts.
+Add the following lines to your init.el file.
+
+```elisp
+(use-package learning-spiral-hydras
+  :load-path "~/emacs30/my-hydras/")
+(global-set-key (kbd "C-c 1") 'hydra-of-learning-spiral/body)
+```
+
+You may have to delete the following line from each hdyra if you lack a master hdyra-of-hydras.
+
+```elisp
+("z" hydra-of-hydras/body :color blue)
+```
 
 # Learning sprial hydra
 Below is a literate programming document.
@@ -24,7 +43,7 @@ It has commands for calling the other hydras above it.
 ## hydra-of-learning-spiral-concepts-mastered
 
 This hydra in a to-do list of skills that I am trying to master.
-```
+```elisp
 (defhydra hydra-of-learning-spiral-concepts-mastered (:hint nil)
 "
 ^Concepts and skills trying to master
@@ -57,7 +76,7 @@ This hydra in a list of keybinding that I thought I had mastered.
 I list these as reality check and as a reminder after long gaps
 in use of these keybindings
 
-```
+```elisp
 (defhydra hydra-of-learning-spiral-keybindings-mastered (:hint nil)
 "
 ^Keybindings and commands mastered
@@ -102,7 +121,7 @@ _q_ quit
 
 
 ## hydra-of-learning-spiral-packages-mastered
-```
+```elisp
 (defhydra hydra-of-learning-spiral-packages-mastered (:hint nil)
 "
 ^Packages trying to master
@@ -140,7 +159,7 @@ It also calls subsidiary hydras that list
 - the concepts that I am trying to master
 - the packages that I am trying to master.
 
-```
+```elisp
 (defhydra hydra-of-learning-spiral (:hint nil)
 "
  ^Commands trying to master
