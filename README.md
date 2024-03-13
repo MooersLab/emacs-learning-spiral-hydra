@@ -14,8 +14,11 @@ git clone https://github.com/MooersLab/emacs-learning-spiral-hydra.git
 Requries the hydra package from MELPA.
 I also use the pretty-hydra package.
 
-Customize file paths and keybinding if it conflicts.
-Add the following lines to your init.el file.
+The configuration below is for the users of the `use-package` package system for managing Emacs packages.
+
+- Customize file path. I store the file learning-spiral-hydra.el inside of the folder `~/emacs30/my-hydras/`
+- Customize the keybinding if it conflicts. Check by entering `C-h k C-c 1`, where `C` stands for the Control key and the `-` means press the Control key with the second key simultaneously.
+- Add the following lines to your init.el file.
 
 ```elisp
 (use-package learning-spiral-hydras
