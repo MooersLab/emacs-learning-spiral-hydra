@@ -1,6 +1,9 @@
 # Hydras to promote mastery of Emacs
-In line pop-up menus of commands that you are trying to master or thought you mastered.
-There hydra were inspire by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
+In-line pop-up menus of commands that you are trying to master or thought you mastered.
+[Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs that users can build and customize.
+The colored letters are mapped to commands that are invoked by entering the letter(s).
+
+These hydra were inspire by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
 The idea here is to use hydras to display this list and related lists.
 The use of the hydra has a low-energy barrier.
 Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
@@ -31,7 +34,8 @@ It should work with version 29 of GNU Emacs.
 The configuration below is for the users of the `use-package` package system for managing Emacs packages.
 
 - Customize file path. I store the file learning-spiral-hydra.el inside of the folder `~/emacs30/my-hydras/`
-- Customize the keybinding if it conflicts. Check by entering `C-h k C-c 1`, where `C` stands for the Control key and the `-` means press the Control key with the second key simultaneously.
+- Customize the keybinding below if it conflicts. Check by entering `C-h k C-c 1`, where `C` stands for the Control key and the `-` means press the Control key with the second key simultaneously.
+- Customize the content of each hydra to meet your learning objectives.
 - Add the following lines to your init.el file.
 
 ```elisp
@@ -40,6 +44,7 @@ The configuration below is for the users of the `use-package` package system for
 (global-set-key (kbd "C-c 1") 'hydra-of-learning-spiral/body)
 ```
 
+#### Caveats
 You may have to delete the following line from each hdyra if you lack a master hdyra-of-hydras.
 
 ```elisp
