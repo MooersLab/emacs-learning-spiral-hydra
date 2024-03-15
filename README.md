@@ -2,17 +2,53 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-# Hydras to promote mastery of Emacs
-In-line pop-up menus of commands that you want to master or thought you mastered.
-[Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs that users can build and customize.
-The blue colored letters below are mapped to commands that are invoked by entering the letter(s).
-
-These hydras were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
-The idea here is to use hydras to display this list and related lists.
-The use of the hydra has a low-energy barrier.
-Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
+# Hydras to promote lazy mastery of Emacs
+[Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs.
+Hydras are often associated with a specific emacs package.
+They provide keyboard shortcuts in the form of single or multiple letters that can be entered in the keyboard or clicked on with the mouse to invoke the associated function.
+The blue colored letters in the snapshot of the hydra below are mapped to commands that are invoked by clicking the letter(s) with the computer mouse.
+Hydras are used to avoid memorizing key bindings.
 
 <p align="center"><img src="./images/master-buffer.png" alt="HTML5 Icon" style="width:800px"></p>
+
+Here, we take the opposite approach!
+We use the pop-up menu nature of hydras as a way of quickly accessing a list of Emacs keybindings that we are trying to memorize.
+Actually, we are trying to build up muscle memory of the key bindings so that we do not even have to recall them when we need to use them.
+We open the pop-up menu by entering `C-c 1`.
+We can close the hydra by clicking on it or by clicking on the `q` button.
+
+The lazy way of using this list is to invoke it at the start of work session in Emacs.
+We can scan the list as a quick reminder of the keybindings that we are trying to master.
+A more robust approach would be to set aside several minutes for the purpose of entering each keybinding that we are trying to master 5 or 10 times on the keyboard in order to build muscle memory.
+It is unlikely that you would have time to go to the complete list, but this approach is effective when you work with 5 to 10 keys at a time each day.
+The goal is to build up the muscle memory of the key bindings on this list to the point that you feel like you really have internalized the keybindings.
+
+Hydras are easy to create and customize.
+Then you can move the keybinding to the list of mastered keybindings in another hdyra that list the key bindings that you think you have mastered.
+The list of mastered key bindings can be reviewed occasionally to check that you really have mastered these keybindings.
+You invoke this the second hydra by clicking on the `km` button.
+
+You can use the hydras in the above `learning-spiral-hydra.el` file as templates to make additional hydras.
+For example, you might want a hydra that is specific to a particular package or major mode that has a long list of key bindings that you are trying to master.
+These related key bindings could be stored in the separate hydra to reduce the clutter of the master hydra.
+
+There is a limit to how many key bindings that you can display in a hydra.
+The limit is imposed by the size of the font and the height of your computer screen.
+You can only zoom out so far.
+
+You can display the keybindings in multiple columns.
+I have yet to master setting up multiple columns in an easy way so i tend to avoid this tactic.
+i find it easier to create a separate hydra for the overflow key bindings.
+This conquer-and-divide approach is a means of getting around this limitation.
+
+The hydras in the above file were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
+I think he was using a org file to store this list.
+Here I am trying to reduce the friction further by the gating the need to navigate to such a file.
+You do not have to remember the name of that work file nor do you have to remember its location.
+This can be a problem if there has been a long break in the viewing of this file.
+Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
+The use of the hydra has a lower energy barrier then opening a text file.
+
 
 
 ## Installation
