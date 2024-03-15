@@ -1,11 +1,26 @@
-![Version](https://img.shields.io/static/v1?label=emacs-learning-sprial-hydra&message=0.1&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=emacs-learning-sprial-hydra&message=0.2&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
 # Hydras to promote lazy mastery of Emacs
-[Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs.
-Hydras are often associated with a specific emacs package.
+
+## Brief introduction for the impatient
+The above `learning-spiral-hydras.el`file supports a laser approach to trying to master key bindings (keyboard shortcuts) in Emacs by listing the ones that you are trying to master in a pop-up menu.
+The pop-up menu is invoked by entering `C-c 1` from any buffer.
+The file is easily edited for customization to meet your needs.
+I expect to be used as a template.
+
+## Longer introduction for the curious
+[Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs--the ultimate text editor.
+Hydras demonstrate the highly configurable nature of Emacs.
+These pop-up menus are called hydras because one hydra popup menu can be used to call many other hydras.
+That is, you can have a hydras of hydras.
+There is no limit to how deeply they can be nested.
+
+Hydras are often associated with a specific Emacs package.
 They provide keyboard shortcuts in the form of single or multiple letters that can be entered in the keyboard or clicked on with the mouse to invoke the associated function.
+In addition to running elisp functions inside of Emacs, hydras can be used to open external applications from inside Emacs, they can be used to open specific files for editing or reading, and they can be used to open specific web pages in your default browser are by using the built-in browser inside of the Emacs.
+
 The blue colored letters in the snapshot of the hydra below are mapped to commands that are invoked by clicking the letter(s) with the computer mouse.
 Hydras are used to avoid memorizing key bindings.
 
@@ -38,12 +53,12 @@ You can only zoom out so far.
 
 You can display the keybindings in multiple columns.
 I have yet to master setting up multiple columns in an easy way so i tend to avoid this tactic.
-i find it easier to create a separate hydra for the overflow key bindings.
+I find it easier to create a separate hydra for the overflow key bindings.
 This conquer-and-divide approach is a means of getting around this limitation.
 
 The hydras in the above file were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
 I think he was using a org file to store this list.
-Here I am trying to reduce the friction further by the gating the need to navigate to such a file.
+Here, I am trying to reduce the friction further by the gating the need to navigate to such a file.
 You do not have to remember the name of that work file nor do you have to remember its location.
 This can be a problem if there has been a long break in the viewing of this file.
 Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
