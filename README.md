@@ -98,6 +98,25 @@ The configuration below is for the users of the `use-package` package system for
 (use-package learning-spiral-hydras
   :load-path "~/emacs30/my-hydras/")
 (global-set-key (kbd "C-c 1") 'hydra-of-learning-spiral/body)
+
+;;;## reload-init
+;; Inspried https://sachachua.com/dotemacs/index.html#org4dd39d0
+(defun reload-init ()
+  "Reload my init.el file. Edit the path to suite your needs."
+  (interactive)
+  (load-file "~/emacs30/init.el"))
+
+;;;## reload-hydras
+(defun reload-hydras ()
+  "Reload my-hydras.el. Edit the path to suite your needs."
+  (interactive)
+  (load-file "~/emacs30/my-hydras/my-hydras.el"))
+
+;;;## reload-learning-spiral-hydras
+(defun reload-learning-spiral-hydras ()
+  "Reload learning-spiral-hydras.el. Edit the path to suite your needs."
+  (interactive)
+  (load-file "~/emacs30/my-hydras/learning-spiral-hydras.el"))
 ```
 
 #### Caveats
