@@ -24,8 +24,7 @@ lfortran in code-blocks via jupyter org-babel language
 ^----------------------------------------------------------------------------
 _km_ learning spral: keybindings mastered
 _p_ learning sprial: packages trying to master
-
-_ls_ Return to learning spiral
+_s_ Return to learning spiral
 _ri_ reload init.el
 _rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
@@ -35,7 +34,7 @@ _q_ quit
 "
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
-("ls" hydra-of-learning-spiral/body :color blue)
+("s" hydra-of-learning-spiral/body :color blue)
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
@@ -48,6 +47,7 @@ _q_ quit
 ;; This hydra in a list of keybinding that I thought I had mastered.
 ;; I list these as reality check and as a reminder after long gaps
 ;; in use of these keybindings
+
 
 (defhydra hydra-of-learning-spiral-keybindings-mastered (:hint nil)
 "
@@ -83,7 +83,7 @@ M-x reload-hydra (reload my-hydras)
 _c_ learning spiral: concepts trying to master
 _p_ learning sprial: packages trying to master
 _l_ edit learning-spiral-hydras.el
-_ls_ Return to learning spiral
+_s_ Return to learning spiral
 _ri_ reload init.el
 _rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
@@ -94,7 +94,7 @@ _q_ quit
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
-("ls" hydra-of-learning-spiral/body :color blue)
+("s" hydra-of-learning-spiral/body :color blue)
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
@@ -125,7 +125,7 @@ treesitter
 _km_ learning spral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _l_ edit learning-spiral-hydras.el
-_ls_ Return to learning spiral
+_s_ Return to learning spiral
 _ri_ reload init.el
 _rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
@@ -137,7 +137,7 @@ _q_ quit
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
-("ls" hydra-of-learning-spiral/body :color blue)
+("s" hydra-of-learning-spiral/body :color blue)
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
