@@ -198,7 +198,7 @@ _q_ quit
 
 <p align="center"><img src="images/keybindings.png" alt="HTML5 Icon" style="width:600px" /></p>
 
-This hydra in a list of keybinding that I thought I had mastered.
+This hydra in a list of keybindings that I thought I had mastered.
 I list these as a reality check and as a reminder after long gaps in use of these keybindings
 
 ```elisp
@@ -283,10 +283,11 @@ _q_ quit
 
 ## hydra-of-learning-spiral
 This is the master hydra that lists the commands that I am trying to master.
-This hydrad also calls subsidiary hydras that list
-- the keybindings that I think I have mastered,
+This hydra also calls subsidiary hydras that list the following:
+
+- the keybindings that I think I have mastered
 - the concepts that I am trying to master
-- the packages that I am trying to master.
+- the packages that I am trying to master
 
 ```elisp
 (defhydra hydra-of-learning-spiral (:hint nil)
