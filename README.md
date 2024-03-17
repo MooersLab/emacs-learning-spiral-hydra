@@ -154,9 +154,10 @@ You may have to delete the following line from each hdyra if you lack a master h
 ("z" hydra-of-hydras/body :color blue)
 ```
 
-# Learning sprial hydra
+# Learning spiral hydra
 Below is a literate programming document.
-It was generated from a buffer containing the hydras by using the `elispdoc` package found [here](https://github.com/benleis1/elispdoc).
+It was generated from a buffer in Emacs that contained the hydras by using the `elispdoc` package found [here](https://github.com/benleis1/elispdoc).
+This document has been extensively edited subsequently.
 
 This is a nested set of hydras.
 The hydra at the bottom is the master hydra: hydra-of-learning-spiral.
