@@ -149,10 +149,51 @@ _q_ quit
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
+
+
+;;;# hydra-of-learning-spiral-part-three
+
+(defhydra hydra-of-learning-spiral-part-three (:hint nil)
+  "
+ ^Commands trying to master
+ ^----------------------------------------------------------------------------------------
+ M-x delete-trailing-whitespace
+ M-x lsp
+ M-x query-replace
+ M-x elispdoc-process-elisp-to-doc
+
+ ^----------------------------------------------------------------------------------------
+ _km_ learning spiral: keybindings mastered
+ _c_ learning spiral: concepts trying to master
+ _p_ learning spiral: packages trying to master
+ _he_ edit /emacs30/my-hydras/my-hydras.el
+ _i_  edit init.el
+ _l_ edit learning-spiral-hydras.el
+ _ri_ reload init.el
+ _rh_ reload my-hydras
+ _rl_ reload learning-spiral-hydras
+ _z_ Return to parent hdyra-of-hydras
+ _q_ quit
+ ^------------------------------------------------------------------------------
+ "
+  ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
+  ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
+  ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
+  ("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
+  ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
+  ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+  ("ri" (reload-init) :color blue)
+  ("rh" (reload-hydras) :color blue)
+  ("rl" (reload-learning-spiral-hydras) :color blue)
+  ("z" hydra-of-hydras/body :color blue)
+  ("q" nil :color blue))
+
+
+
 ;;;# hydra-of-learning-spiral-part-two
 
 (defhydra hydra-of-learning-spiral-part-two (:hint nil)
-"
+  "
  ^Commands trying to master
  ^----------------------------------------------------------------------------------------
  C-x k                 Kill the buffer.
@@ -171,13 +212,8 @@ _q_ quit
  C-x b <BufferName>    Visit specific buffer.
  C-z                   Suspend Emacs. Return with `fg'.
 
- M-x delete-trailing-whitespace
- M-x lsp
- M-x query-replace
- M-x elispdoc-process-elisp-to-doc
-
- ^----------------------------------------------------------------------------------------
-
+  ^----------------------------------------------------------------------------------------
+ _n_ next part of this learning spiral.
  _km_ learning spiral: keybindings mastered
  _c_ learning spiral: concepts trying to master
  _p_ learning spiral: packages trying to master
@@ -191,18 +227,18 @@ _q_ quit
  _q_ quit
  ^------------------------------------------------------------------------------
  "
-
-("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
-("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
-("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
-("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
-("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
-("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
-("ri" (reload-init) :color blue)
-("rh" (reload-hydras) :color blue)
-("rl" (reload-learning-spiral-hydras) :color blue)
-("z" hydra-of-hydras/body :color blue)
-("q" nil :color blue))
+  ("n" hydra-of-learning-spiral-part-three/body :color blue)
+  ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
+  ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
+  ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
+  ("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
+  ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
+  ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+  ("ri" (reload-init) :color blue)
+  ("rh" (reload-hydras) :color blue)
+  ("rl" (reload-learning-spiral-hydras) :color blue)
+  ("z" hydra-of-hydras/body :color blue)
+  ("q" nil :color blue))
 
 
 
