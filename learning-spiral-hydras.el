@@ -53,27 +53,32 @@ _q_ quit
 "
 ^Keybindings and commands mastered
 ------------------------------------------------------------------------------
-C-x C-c                Quit Emacs
-C-g                    Abort command entry
-C-x C-s                Save buffer to a file
-C-x C-w                Write buffer to the specified file
-C-x C-f                Open a file
-C-x d                  Open dired
+C-x C-c                Quit Emacs.
+C-g                    Abort command entry.
+C-x C-s                Save buffer to a file.
+C-x C-w                Write buffer to the specified file.
+C-x C-f                Open a file.
+C-x d                  Open dired.
 C-x C-e                Run elisp sequential expression (sexp).
 C-x u                  Undo.
-C-c C-e                Export org-mode to another format
-C-c C-a                Compile to PDF when in latex-mode or auctex-mode
-C-1                    Close buffer
-C-x 1                  Display only one buffer
-C-c 0                  Display hydra-of-hydras
-C-c 1                  Display learning spiral hydra
-C-y                    Paste
-C-w                    Cut or kill selection
+C-c C-e                Export org-mode to another format.
+C-c C-a                Compile to PDF when in latex-mode or auctex-mode.
+C-1                    Close buffer.
+C-x 1                  Display only one buffer.
+C-c 0                  Display hydra-of-hydras.
+C-c 1                  Display learning spiral hydra.
+C-y                    Paste.
+C-w                    Cut or kill selection.
 M-w                    Copy selection to kill ring (clipboard) but do not kill.
-s-c                    Copy
-C-o                    Insert a yasnippet snippet
+s-c                    Copy.
+C-o                    Insert a yasnippet snippet.
 C-c 0                  Open my-hydras.el
 C-space                Set mark for a selection.
+C-k                    Kill a line or region.
+C-a                    Move to the beginning of line.
+C-e                    Move to the end of line.
+C-s                    Search forward.
+C-r                    Search backward.
 
 
 M-x eval-buffer
@@ -117,7 +122,7 @@ lsp-ltex
 lsp-grammarly
 LaTeX-mode
 magit
-org-aggenda
+org-agenda
 org-babel code blocks
 org-roam
 treesitter
@@ -206,7 +211,7 @@ _q_ quit
  C-o                   Insert snippet at the point (cursor) after typing tab trigger.
  C-c SPC y SPC i       Insert snippet at the point (cursor) via selection from the popup menu.
  C-c SPC y SPC n       Create a new snippet.
- C-c w                 Run texcount.pl on main.tex
+ C-c w                 Run texcount.pl on main.tex.
  M-k                   Kill from the cursor to the end of the sentence.
  C-w                   Kill from mark to cursor.
  C-x b <BufferName>    Visit specific buffer.
@@ -257,16 +262,16 @@ _q_ quit
 (defhydra hydra-of-learning-spiral (:hint nil)
   "
  ^Commands trying to master
- ^----------------------------------------------------------------------------------------
- C-c =                 Use in auctex-mode to display TOC of the document in a separate buffer
+ ^-----------------------------------------------------------------------------------------------
+ C-c =                 Use in auctex-mode to display TOC of the document in a separate buffer.
  C-c d                 Display a pop-up menu with info about the file, including word count.
  C-h l                 Display list of last commands.
- s-,                   Open the customize buffer
+ s-,                   Open the customize buffer.
  C-[scrollwheel-up]    Zoom text in.
  C-[scrollwheel-down]  Zoom text out.
  M-S-x                 List all commands relevant to the current mode.
  s-n                   Open a new frame with the current buffer.
- s-s                   Toggle speedbar. Must load sr-speedbar first. Like M-i or C-c =
+ s-s                   Toggle speedbar. Must load sr-speedbar first. Like M-i or C-c =.
  M-w                   Copy selection to kill ring (clipboard) but do not kill. Like s-c.
  M-;                   Comment or uncomment a region.
  M-i                   Display an index of buffer. Use in tex files to navigate to sections.
@@ -276,7 +281,9 @@ _q_ quit
  C-n                   Move to the next line.
  C-p                   Move to the previous line.
  C-f                   Move forward one character.
- M-percent sign        M-x query-replace
+ C-b                   Move back one character.
+ M-!                   Shell escape.
+ M-percent sign        M-x query-replace.
  M-f                   Move forward a word.
  M-b                   Move back a word.
  M-a                   Move to the beginning of the sentence.
@@ -291,18 +298,18 @@ _q_ quit
  M-x query-replace
  M-x elispdoc-process-elisp-to-doc
 
- ^----------------------------------------------------------------------------------------
+ ^----------------------------------------------------------------------------------------------
  _n_ next part of this learning spiral.
  _km_ learning spiral: keybindings mastered
  _c_ learning spiral: concepts trying to master
  _p_ learning spiral: packages trying to master
  _he_ edit /emacs30/my-hydras/my-hydras.el
- _i_  edit init.el
- _l_ edit learning-spiral-hydras.el
- _ri_ reload init.el
- _rh_ reload my-hydras
- _rl_ reload learning-spiral-hydras
- _z_ Return to parent hdyra-of-hydras
+ _i_  edit init.el in Emacs
+ _l_ edit learning-spiral-hydras.el in Emacs
+ _ri_ reload init.el into Emacs after changing on disk.
+ _rh_ reload my-hydras after changing on disk.
+ _rl_ reload learning-spiral-hydras after changing on disk.
+ _z_ Return to parent hdyra-of-hydras.
  _q_ quit
  ^------------------------------------------------------------------------------
  "
