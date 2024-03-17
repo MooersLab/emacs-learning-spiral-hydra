@@ -1,36 +1,38 @@
-![Version](https://img.shields.io/static/v1?label=emacs-learning-sprial-hydra&message=0.3&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=emacs-learning-sprial-hydra&message=0.4&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
 # Hydras to promote lazy mastery of Emacs
 
 ## Brief introduction for the impatient
-The above `learning-spiral-hydras.el`file supports a laser approach to trying to master key bindings (keyboard shortcuts) in Emacs by listing the ones that you are trying to master in a pop-up menu.
+The above `learning-spiral-hydras.` file supports a lazy approach to tryingng to master key bindings (keyboard shortcuts) in Emacs by listing the ones that you are trying to master in a pop-up menu.
 The pop-up menu is invoked by entering `C-c 1` from any buffer.
 The file is easily edited for customization to meet your needs.
-I expect to be used as a template.
+I expect it to be used as a template.
 
 ## Longer introduction for the curious
 [Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs--the ultimate text editor.
 Hydras demonstrate the highly configurable nature of Emacs.
-These pop-up menus are called hydras because one hydra popup menu can be used to call many other hydras.
-That is, you can have a hydras of hydras.
-There is no limit to how deeply they can be nested.
+These pop-up menus are called hydras because one hydra popup menu can be used to call many other hydra popup menus.
+However, only one hydra is displayed at a time.
+I use a hydras of hydras to serve as a port of entry to all of my hydras.
+There is no limit to how deeply the hydras can be nested.
+Because of this feature, the analogy with the mythological beast breaks down to the disappoint of those who know their Greek mythology.
 
-Hydras are often associated with a specific Emacs package.
-They provide keyboard shortcuts in the form of single or multiple letters that can be entered in the keyboard or clicked on with the mouse to invoke the associated function.
-In addition to running elisp functions inside of Emacs, hydras can be used to open external applications from inside Emacs, they can be used to open specific files for editing or reading, and they can be used to open specific web pages in your default browser are by using the built-in browser inside of the Emacs.
+Hydras are often associated with a specific Emacs package for the purpose of easing the use of the functions in that package.
+They provide keyboard shortcuts in the form of single or multiple letters that can be entered in the keyboard or clicked on with the cursor to invoke the associated function.
+In addition to running elisp functions inside of Emacs, hydras can be used to open external applications from inside Emacs, they can be used to open specific files for editing or reading, and they can be used to open specific web pages in your default browser.
 
-The blue colored letters in the snapshot of the hydra below are mapped to commands that are invoked by clicking the letter(s) with the computer mouse.
-Hydras are used to avoid memorizing key bindings.
+The blue-colored letters in the snapshot of the hydra below are mapped to commands that are invoked by clicking the letter(s) with the cursor.
+Hydras are used to evade learning the corresponding key bindings.
 
 <p align="center"><img src="./images/master-buffer.png" alt="HTML5 Icon" style="width:800px"></p>
 
 Here, we take the opposite approach!
-We use the pop-up menu nature of hydras as a way of quickly accessing a list of Emacs keybindings that we are trying to memorize.
-Actually, we are trying to build up muscle memory of the key bindings so that we do not even have to recall them when we need to use them.
+We use the pop-up menu nature of hydras to quickly access a list of Emacs keybindings that we are trying to master by building muscle memory of those key bindings.
+Actually, we are trying to build up muscle memory of the key bindings so that we do not have to recall them when we need to use them.
 We open the pop-up menu by entering `C-c 1`.
-We can close the hydra by clicking on it or by clicking on the `q` button.
+We can close the hydra by clicking on it, by clicking on the \textbf{q} button, or by entering \textbf{q} on the keyboard.
 
 The lazy way of using this list is to invoke it at the start of work session in Emacs.
 We can scan the list as a quick reminder of the keybindings that we are trying to master.
