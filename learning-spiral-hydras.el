@@ -16,14 +16,14 @@
 ^Concepts and skills trying to master
 -----------------------------------------------------------------------------
 LaTeX workflow in Emacs
-Voice control in Emacs
-Make snippets of all useful code blocks in org-mode.
 lfortran in code-blocks via jupyter org-babel language
-
+macros
+reading email in Emacs
+Voice computing in Emacs
 
 ^----------------------------------------------------------------------------
-_km_ learning spral: keybindings mastered
-_p_ learning sprial: packages trying to master
+_km_ learning spiral: keybindings mastered
+_p_ learning spiral: packages trying to master
 _s_ Return to learning spiral
 _ri_ reload init.el
 _rh_ reload my-hydras
@@ -44,9 +44,9 @@ _q_ quit
 
 
 ;;;# hydra-of-learning-spiral-keybindings-mastered
-;; This hydra in a list of keybinding that I thought I had mastered.
-;; I list these as reality check and as a reminder after long gaps
-;; in use of these keybindings
+;; This hydra in a list of keybindings I thought I had mastered.
+;; I list these as a reality check and as a reminder after long gaps
+;; in use of these keybindings.
 
 
 (defhydra hydra-of-learning-spiral-keybindings-mastered (:hint nil)
@@ -56,16 +56,17 @@ _q_ quit
 C-x C-c                Quit Emacs
 C-g                    Abort command entry
 C-x C-s                Save buffer to a file
-C-x C-w                Write buffer to specified file
+C-x C-w                Write buffer to the specified file
 C-x C-f                Open a file
 C-x d                  Open dired
-C-x C-e                Run elisp sexp
+C-x C-e                Run elisp sequential expression (sexp).
+C-x u                  Undo.
 C-c C-e                Export org-mode to another format
 C-c C-a                Compile to PDF when in latex-mode or auctex-mode
 C-1                    Close buffer
 C-x 1                  Display only one buffer
 C-c 0                  Display hydra-of-hydras
-C-c 1                  Display learning spiral hdyra
+C-c 1                  Display learning spiral hydra
 C-y                    Paste
 C-w                    Cut or kill selection
 M-w                    Copy selection to kill ring (clipboard) but do not kill.
@@ -81,7 +82,7 @@ M-x reload-hydra (reload my-hydras)
 ^------------------------------------------------------------------------------
 
 _c_ learning spiral: concepts trying to master
-_p_ learning sprial: packages trying to master
+_p_ learning spiral: packages trying to master
 _l_ edit learning-spiral-hydras.el
 _s_ Return to learning spiral
 _ri_ reload init.el
@@ -115,10 +116,13 @@ diredx
 lsp-ltex
 lsp-grammarly
 LaTeX-mode
+magit
 org-aggenda
 org-babel code blocks
 org-roam
 treesitter
+advanced features of yasnippets
+zetteldesk
 
 ^------------------------------------------------------------------------------
 
@@ -145,51 +149,21 @@ _q_ quit
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
+;;;# hydra-of-learning-spiral-part-two
 
-;;;# hydra-of-learning-spiral
-;; This is the master hydra that lists the commands that I am trying to master.
-;; It also calls subsidiary hydras that list
-;; - the keybindings that I think I have mastered,
-;; - the concepts that I am trying to master
-;; - the packages that I am trying to master.
-(defhydra hydra-of-learning-spiral (:hint nil)
+(defhydra hydra-of-learning-spiral-part-two (:hint nil)
 "
  ^Commands trying to master
  ^----------------------------------------------------------------------------------------
- C-c =                 Use in auctex-mode to display TOC of document in separate buffer
- C-c d                 Display pop-up menu with info about file including word count.
- C-h l                 Display list of last commands.
- s-,                   Open the customize buffer
- C-[scrollwheel-up]    Zoom text in.
- C-[scrollwheel-down]  Zoom text out.
- C-x u                 Undo.
- M-S-x                 List all commands relevant to the current mode.
- s-n                   Open a new frame with the current buffer.
- s-s                   Toggle speedbar. Must load sr-speedbar first. Like M-i or C-c =
- M-w                   Copy selection to kill ring (clipboard) but do not kill. Like s-c.
- M-;                   Comment or uncomment a region.
- M-i                   Display an index of buffer. Use in tex files to navigate to sections.
- C-v                   Next page down.
- M-v                   Next page up.
- C-l                   Center the current line in the window.
- C-n                   Move to the next line.
- C-p                   Move to the previous line.
- C-f                   Move forward one character.
- M-f                   Move forward a word.
- M-b                   Move back a word.
- M-a                   Move to beginning of sentence.
- M-e                   Move to end of sentence.
- M-q                   Unwrap text to one-sentence per line.
- M-<                   Move to end of file.
- M->                   Move to beginning of file.
- C-x o                 Move cursor to other window.
+ C-x k                 Kill the buffer.
+ C-x o                 Move cursor to another window.
  C-M-v                 Scroll the other window.
  C-x C-b               Open ibuffer.
  C-x b                 Select buffer. TAB to show possible buffers.
  C-x C-j               Dired jump.
- C-c m                 Switch to minibuffer
- C-o                   Insert snippet at point after typing tab trigger.
- C-c SPC y SPC i       Insert snippet at point via selection from popup menu.
+ C-c m                 Switch to minibuffer.
+ C-o                   Insert snippet at the point (cursor) after typing tab trigger.
+ C-c SPC y SPC i       Insert snippet at the point (cursor) via selection from the popup menu.
  C-c SPC y SPC n       Create a new snippet.
  C-c w                 Run texcount.pl on main.tex
  M-k                   Kill from the cursor to the end of the sentence.
@@ -199,7 +173,7 @@ _q_ quit
 
  M-x delete-trailing-whitespace
  M-x lsp
- M-x query-replace M-precent sign
+ M-x query-replace
  M-x elispdoc-process-elisp-to-doc
 
  ^----------------------------------------------------------------------------------------
@@ -217,6 +191,7 @@ _q_ quit
  _q_ quit
  ^------------------------------------------------------------------------------
  "
+
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
@@ -228,5 +203,84 @@ _q_ quit
 ("rl" (reload-learning-spiral-hydras) :color blue)
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
+
+
+
+
+
+;;;# hydra-of-learning-spiral
+;; This is the master hydra that lists the commands that I am trying to master.
+;; It is the top of the learning spiral.
+;; It continues on the next hydra, hydra-of-learning-spiral-part-two.
+;; This second part is invoked by clicking on `n` or by entering `n'
+;;
+;; It also calls subsidiary hydras that list the following:
+;; - the keybindings that I think I have mastered,
+;; - the concepts that I am trying to master
+;; - the packages that I am trying to master.
+(defhydra hydra-of-learning-spiral (:hint nil)
+  "
+ ^Commands trying to master
+ ^----------------------------------------------------------------------------------------
+ C-c =                 Use in auctex-mode to display TOC of the document in a separate buffer
+ C-c d                 Display a pop-up menu with info about the file, including word count.
+ C-h l                 Display list of last commands.
+ s-,                   Open the customize buffer
+ C-[scrollwheel-up]    Zoom text in.
+ C-[scrollwheel-down]  Zoom text out.
+ M-S-x                 List all commands relevant to the current mode.
+ s-n                   Open a new frame with the current buffer.
+ s-s                   Toggle speedbar. Must load sr-speedbar first. Like M-i or C-c =
+ M-w                   Copy selection to kill ring (clipboard) but do not kill. Like s-c.
+ M-;                   Comment or uncomment a region.
+ M-i                   Display an index of buffer. Use in tex files to navigate to sections.
+ C-v                   Next page down.
+ M-v                   Next page up.
+ C-l                   Center the current line in the window.
+ C-n                   Move to the next line.
+ C-p                   Move to the previous line.
+ C-f                   Move forward one character.
+ M-percent sign        M-x query-replace
+ M-f                   Move forward a word.
+ M-b                   Move back a word.
+ M-a                   Move to the beginning of the sentence.
+ M-e                   Move to the end of the sentence.
+ M-q                   Unwrap text to one sentence per line.
+ M-<                   Move to the end of the file.
+ M->                   Move to the beginning of the file.
+ M-g M-g               Goto a specific line number.
+
+ M-x delete-trailing-whitespace
+ M-x lsp
+ M-x query-replace
+ M-x elispdoc-process-elisp-to-doc
+
+ ^----------------------------------------------------------------------------------------
+ _n_ next part of this learning spiral.
+ _km_ learning spiral: keybindings mastered
+ _c_ learning spiral: concepts trying to master
+ _p_ learning spiral: packages trying to master
+ _he_ edit /emacs30/my-hydras/my-hydras.el
+ _i_  edit init.el
+ _l_ edit learning-spiral-hydras.el
+ _ri_ reload init.el
+ _rh_ reload my-hydras
+ _rl_ reload learning-spiral-hydras
+ _z_ Return to parent hdyra-of-hydras
+ _q_ quit
+ ^------------------------------------------------------------------------------
+ "
+  ("n" hydra-of-learning-spiral-part-two/body :color blue)
+  ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
+  ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
+  ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
+  ("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
+  ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
+  ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+  ("ri" (reload-init) :color blue)
+  ("rh" (reload-hydras) :color blue)
+  ("rl" (reload-learning-spiral-hydras) :color blue)
+  ("z" hydra-of-hydras/body :color blue)
+  ("q" nil :color blue))
 
 (provide 'learning-spiral-hydras)
