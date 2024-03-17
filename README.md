@@ -2,13 +2,18 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-# Hydras to promote lazy mastery of Emacs
+# Lazy mastery of Emacs
 
 ## Brief introduction for the impatient
-The above `learning-spiral-hydras.` file supports a lazy approach to tryingng to master key bindings (keyboard shortcuts) in Emacs by listing the ones that you are trying to master in a pop-up menu.
+The above `learning-spiral-hydras.el` file supports a lazy approach to mastering key bindings (keyboard shortcuts) in Emacs by listing the ones that you are trying to master in a pop-up menu.
 The pop-up menu is invoked by entering `C-c 1` from any buffer.
 The file is easily edited for customization to meet your needs.
 I expect it to be used as a template.
+If you are a beginning Emacs user, you can use these lists as a means of jump starting your use of Emacs.
+
+The code blockes and snapshots below show the individual hydras.
+The lists of keybindings in these hydras are abbreviated to save space.
+The `learning-spiral-hydras.el` contains my current hydras which have longer lists.
 
 ## Longer introduction for the curious
 [Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs--the ultimate text editor.
@@ -46,7 +51,7 @@ You invoke this the second hydra by clicking on the `km` button: `km` represents
 
 You can use the hydras in the above `learning-spiral-hydra.el` file as templates to make additional hydras.
 For example, you might want a hydra that is specific to a particular package or major mode that has a long list of key bindings that you are trying to master.
-These related key bindings could be stored in the separate hydra to reduce the clutter of the master hydra.
+These related key bindings could be stored in a separate hydra to reduce the clutter of the master hydra.
 
 There is a limit to how many key bindings that you can display in a hydra.
 The limit is imposed by the size of the font and the height of your computer screen.
@@ -54,17 +59,39 @@ You can only zoom out so far before the font grows too small to see.
 
 You can display the keybindings in multiple columns.
 I have yet to master setting up multiple columns in an easy way so I tend to avoid this tactic.
-I find it easier to create a separate hydra there is an overflow key bindings.
-This conquer-and-divide approach is a means of getting around this limitation.
+I find it easier to create a second hydra when there is an overflow key bindings.
+Just click on `n` to advance to the next section of list of keybindings.
 
+## History
 The hydras in the above file were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
 I think he was using a org file to store this list.
 Here, I am trying to reduce the friction further by the negating the need to navigate to such a file.
 You do not have to remember the name or location of that org file.
 This can be a problem if there has been a long break in the viewing of this file.
 Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
-The use of the hydra has a lower energy barrier then opening a text file.
+The use of the master hydra has a lower energy barrier than navigating to a text file.
 
+
+## Related repos
+### Emacs quizzes
+A more active means of mastering the keybindings is to take [quizzes](https://github.com/MooersLab/qemacs) about them.
+The above PDFs of quiz questions can be printed, and the quiz can be taken while away from the computer.
+These quizzes can be taken when you have time to kill like standing in the boarding line at the airport, commuting on public transit, or waiting for a seminar to start.
+
+<!--
+Coming Soon:  Interactive Python based quizzes can be run in the terminal or in Jupyter or Colab notebooks using the `%run` line magic.
+A set of quiz questions written in Elisp is also available for running in the minibuffer of Emacs.
+You can search for a topic in the quiz question set via the minibuffer.
+Coming Soon: I plan to create hydras that list the questions to ease access to relevant questions that relate to your task at hand.
+-->
+
+### Related with Desktop Wallpaper
+
+I made a desktop [wallpaper of common Emacs keybindings](https://codeberg.org/MooersLab/EmacsWallPaper).
+Sometimes this is useful to quickly find out what keybindings you have not mastered in Emacs.
+It is a more passive and lazier approach.
+It might be useful for some beginners.
+You can use it a template to create your own.
 
 
 ## Installation
