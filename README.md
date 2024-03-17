@@ -32,18 +32,17 @@ Here, we take the opposite approach!
 We use the pop-up menu nature of hydras to quickly access a list of Emacs keybindings that we are trying to master by building muscle memory of those key bindings.
 Actually, we are trying to build up muscle memory of the key bindings so that we do not have to recall them when we need to use them.
 We open the pop-up menu by entering `C-c 1`.
-We can close the hydra by clicking on it, by clicking on the \textbf{q} button, or by entering \textbf{q} on the keyboard.
+We can close the hydra by clicking on it, by clicking on the `q` button, or by entering \textbf{q} on the keyboard.
 
 The lazy way of using this list is to invoke it at the start of work session in Emacs.
 We can scan the list as a quick reminder of the keybindings that we are trying to master.
 A more robust approach would be to set aside several minutes for the purpose of entering each keybinding that we are trying to master 5 or 10 times on the keyboard in order to build muscle memory.
 It is unlikely that you would have time to go to the complete list, but this approach is effective when you work with 5 to 10 keys at a time each day.
-The goal is to build up the muscle memory of the key bindings on this list to the point that you feel like you really have internalized the keybindings.
+The goal is to build up the muscle memory of the key bindings on this list.
 
-Hydras are easy to create and customize.
-Then you can move the keybinding to the list of mastered keybindings in another hdyra that list the key bindings that you think you have mastered.
+After the keybinding is internalized, you can move the keybinding to the list of mastered keybindings in another hdyra that lists the key bindings that you think you have mastered.
 The list of mastered key bindings can be reviewed occasionally to check that you really have mastered these keybindings.
-You invoke this the second hydra by clicking on the `km` button.
+You invoke this the second hydra by clicking on the `km` button: `km` represents `keybindings mastered`.
 
 You can use the hydras in the above `learning-spiral-hydra.el` file as templates to make additional hydras.
 For example, you might want a hydra that is specific to a particular package or major mode that has a long list of key bindings that you are trying to master.
@@ -51,17 +50,17 @@ These related key bindings could be stored in the separate hydra to reduce the c
 
 There is a limit to how many key bindings that you can display in a hydra.
 The limit is imposed by the size of the font and the height of your computer screen.
-You can only zoom out so far.
+You can only zoom out so far before the font grows too small to see.
 
 You can display the keybindings in multiple columns.
-I have yet to master setting up multiple columns in an easy way so i tend to avoid this tactic.
-I find it easier to create a separate hydra for the overflow key bindings.
+I have yet to master setting up multiple columns in an easy way so I tend to avoid this tactic.
+I find it easier to create a separate hydra there is an overflow key bindings.
 This conquer-and-divide approach is a means of getting around this limitation.
 
 The hydras in the above file were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
 I think he was using a org file to store this list.
-Here, I am trying to reduce the friction further by the gating the need to navigate to such a file.
-You do not have to remember the name of that work file nor do you have to remember its location.
+Here, I am trying to reduce the friction further by the negating the need to navigate to such a file.
+You do not have to remember the name or location of that org file.
 This can be a problem if there has been a long break in the viewing of this file.
 Just enter `C-c 1` from any buffer to display the master learning spiral hydra.
 The use of the hydra has a lower energy barrier then opening a text file.
@@ -70,7 +69,7 @@ The use of the hydra has a lower energy barrier then opening a text file.
 
 ## Installation
 
-Install where you see fit. 
+Install where you see fit.
 My emacs directory (i.e., `~/emacs30`) is not a hidden folder, unlike what is recommended.
 I store my hydras in a subfolder called `my-hydras` (i.e., `~/emacs30/my-hydras`).
 
@@ -91,10 +90,10 @@ It should work with version 29 of GNU Emacs and perhaps earlier versions of Emac
 
 The configuration below is for the users of the `use-package` package system for managing Emacs packages.
 
-- Customize the file path. I store the file learning-spiral-hydra.el inside of the folder `~/emacs30/my-hydras/`
+- Customize the file path. I store the file `learning-spiral-hydra.el` inside of the folder `~/emacs30/my-hydras/`.
 - Customize the keybinding below if it conflicts. Check by entering `C-h k C-c 1`, where `C` stands for the Control key and the `-` means press the Control key with the second key simultaneously.
 - Customize the content of each hydra to meet your learning objectives.
-- Add the following lines to your init.el file.
+- Add the following lines to your init.el file. The file my-hydra.el is a master hydra for calling other hydras. You do not need it if you are only going to use the emacs-learning-spiral hydra.
 
 ```elisp
 (use-package learning-spiral-hydras
