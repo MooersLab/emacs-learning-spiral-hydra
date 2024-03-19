@@ -131,7 +131,7 @@ zetteldesk
 
 ^------------------------------------------------------------------------------
 
-_km_ learning spral: keybindings mastered
+_km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _l_ edit learning-spiral-hydras.el
 _s_ Return to learning spiral
@@ -163,9 +163,14 @@ _q_ quit
  ^Commands trying to master
  ^----------------------------------------------------------------------------------------
  M-x delete-trailing-whitespace
+ M-x ispell-region
+ M-x ispell-buffer
+ M-x flyspell-mode
  M-x lsp
  M-x query-replace
  M-x elispdoc-process-elisp-to-doc
+ M-x shell
+ M-x eshell
 
  ^----------------------------------------------------------------------------------------
  _km_ learning spiral: keybindings mastered
@@ -282,7 +287,7 @@ _q_ quit
  C-p                   Move to the previous line.
  C-f                   Move forward one character.
  C-b                   Move back one character.
- M-!                   Shell escape.
+ M-!                   Execute a shell command.
  M-percent sign        M-x query-replace.
  M-f                   Move forward a word.
  M-b                   Move back a word.
