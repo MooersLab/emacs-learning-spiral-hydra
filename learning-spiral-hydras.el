@@ -19,6 +19,7 @@ LaTeX workflow in Emacs
 lfortran in code-blocks via jupyter org-babel language
 macros
 reading email in Emacs
+regex Emacs style
 Voice computing in Emacs
 
 ^----------------------------------------------------------------------------
@@ -169,6 +170,7 @@ M-x ispell-buffer
 M-x flyspell-mode
 M-x lsp
 M-x query-replace
+M-x query-replace-regexp
 M-x elispdoc-process-elisp-to-doc
 M-x shell
 M-x eshell
@@ -220,7 +222,7 @@ _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _p_ learning spiral: packages trying to master
 _he_ edit /emacs30/my-hydras/my-hydras.el
-_i_  edit init.el
+_i_ edit init.el
 _l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
 _rh_ reload my-hydras
@@ -259,6 +261,14 @@ _q_ quit
  C-M-@               Mark sexp
  C-M-h               Mark function.
  C-x h               Mark entire buffer.
+ 
+ M-%                 Iteratively replace a string.
+ 
+ M-u                 Uppercase a word.
+ M-l                 Lowercase a word.
+ M-c                 Capitalize a word.
+ C-x C-u             Uppercase a region.
+ C-x C-l             Lowercase a regin.
 ^----------------------------------------------------------------------------------------
 _n_ next part of this learning spiral.
 _km_ learning spiral: keybindings mastered
@@ -295,48 +305,49 @@ _q_ quit
   "
  ^Commands trying to master
  ^----------------------------------------------------------------------------------------
- C-x k                 Kill the buffer.
- C-x s                 Save all files.
- C-x o                 Move cursor to another window.
- C-M-v                 Scroll the other window.
- C-x C-b               Open ibuffer.
- C-x b                 Select buffer. TAB to show possible buffers.
- C-x C-j               Dired jump.
- C-c m                 Switch to minibuffer.
- C-o                   Insert snippet at the point (cursor) after typing tab trigger.
- C-c SPC y SPC i       Insert snippet at the point (cursor) via selection from the popup menu.
- C-c SPC y SPC n       Create a new snippet.
- C-c w                 Run texcount.pl on main.tex.
- M-k                   Kill from the cursor to the end of the sentence.
- C-w                   Kill from mark to cursor.
- C-x b <BufferName>    Visit specific buffer.
- C-z                   Suspend terminal or iconify graphical Emacs. Return with `fg'.
- C-x C-v               Replace file with the file that you want.
- C-x i                 Insert document into a buffer.
- C-h                   Show help menu.
- C-h t                 Help tutorial.
- C-x 1                 Remove help window.
- C-M-v                 Scroll help window.
- C-h a                 Show commands matching a string.
- C-h k                 Return the command activate by an entered keybinding.
- C-h f                 Describe a function.
- C-h m                 Get information about current mode.
- C-_                   Undo.
- C-/                   Undo.
- M-p                   Select previous search string.
- M-n                   Select next search string.
- M-{                   Move point back one paragraph.  
- M-}                   Move point forward one paragraph.
- C-x [                 Move backward a page.
- C-x ]                 Move forward a page.
- C-M-b                 Move back one sexp.
- C-M-f                 Move forward one sexp.
- C-M-a                 Move back one function.
- C-M-e                 Move forward one function.
- C-v                   Move to next screen.
- M-v                   Move to previous screen.
- M-g c                 Goto char.
- M-m                   Goto the indentation.rl
+ C-x k                      Kill the buffer.
+ C-x s                      Save all files.
+ C-x o                      Move cursor to another window.
+ C-M-v                      Scroll the other window.
+ C-x C-b                    Open ibuffer.
+ C-x b                      Select buffer. TAB to show possible buffers.
+ C-x C-j                    Dired jump.
+ C-c m                      Switch to minibuffer.
+ C-o                        Insert snippet at the point (cursor) after typing tab trigger.
+ C-c SPC y SPC i            Insert snippet at the point (cursor) via selection from the popup menu.
+ C-c SPC y SPC n            Create a new snippet.
+ C-c w                      Run texcount.pl on main.tex.
+ M-k                        Kill from the cursor to the end of the sentence.
+ C-w                        Kill from mark to cursor.
+ C-x b <BufferName>         Visit specific buffer.
+ C-z                        Suspend terminal or iconify graphical Emacs. Return with `fg'.
+ C-x C-v                    Replace file with the file that you want.
+ C-x i                      Insert document into a buffer.
+ C-h                        Show help menu.
+ C-h t                      Help tutorial.
+ C-x 1                      Remove help window.
+ C-M-v                      Scroll help window.
+ C-h a                      Show commands matching a string.
+ C-h k                      Return the command activate by an entered keybinding.
+ C-h f                      Describe a function.
+ C-h m                      Get information about current mode.
+ C-h i m Emacs Lisp Intro   Open a hyperlinked version of this valuable book.
+ C-_                        Undo.
+ C-/                        Undo.
+ M-p                        Select previous search string.
+ M-n                        Select next search string.
+ M-{                        Move point back one paragraph.  
+ M-}                        Move point forward one paragraph.
+ C-x [                      Move backward a page.
+ C-x ]                      Move forward a page.
+ C-M-b                      Move back one sexp.
+ C-M-f                      Move forward one sexp.
+ C-M-a                      Move back one function.
+ C-M-e                      Move forward one function.
+ C-v                        Move to next screen.
+ M-v                        Move to previous screen.
+ M-g c                      Goto char.
+ M-m                        Goto the indentation.rl
  ^----------------------------------------------------------------------------------------
  _n_ next part of this learning spiral.
  _km_ learning spiral: keybindings mastered
