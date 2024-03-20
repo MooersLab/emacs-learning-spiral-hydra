@@ -252,8 +252,13 @@ _q_ quit
  M-w                 Copy region to kill ring.
  M-z char            Kill through character char.
  M-y                 Replace last yank with previous kill.
- M-x M-x             Exchange point and mark.
+ C-x C-x             Exchange point and mark.
  
+ M-h                 Mark paragraph.
+ C-x C-p             Mark page.
+ C-M-@               Mark sexp
+ C-M-h               Mark function.
+ C-x h               Mark entire buffer.
 ^----------------------------------------------------------------------------------------
 _n_ next part of this learning spiral.
 _km_ learning spiral: keybindings mastered
