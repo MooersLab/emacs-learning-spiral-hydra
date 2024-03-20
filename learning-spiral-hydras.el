@@ -156,36 +156,120 @@ _q_ quit
 
 
 
-;;;# hydra-of-learning-spiral-part-three
 
+;;;# hydra-of-learning-spiral-part-four
+
+(defhydra hydra-of-learning-spiral-part-five (:hint nil)
+ "
+^Commands trying to master
+^----------------------------------------------------------------------------------------
+M-x delete-trailing-whitespace
+M-x ispell-region
+M-x ispell-buffer
+M-x flyspell-mode
+M-x lsp
+M-x query-replace
+M-x elispdoc-process-elisp-to-doc
+M-x shell
+M-x eshell
+M-x recover-session
+M-x revert-buffer
+
+^----------------------------------------------------------------------------------------
+_km_ learning spiral: keybindings mastered
+_c_ learning spiral: concepts trying to master
+_p_ learning spiral: packages trying to master
+_he_ edit /emacs30/my-hydras/my-hydras.el
+_i_  edit init.el
+_l_ edit learning-spiral-hydras.el
+_ri_ reload init.el
+_rh_ reload my-hydras
+_rl_ reload learning-spiral-hydras
+_z_ Return to parent hdyra-of-hydras
+_q_ quit
+^------------------------------------------------------------------------------
+"
+("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
+("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
+("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
+("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
+("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
+("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+("ri" (reload-init) :color blue)
+("rh" (reload-hydras) :color blue)
+("rl" (reload-learning-spiral-hydras) :color blue)
+("z" hydra-of-hydras/body :color blue)
+("q" nil :color blue))
+
+
+;;;# hydra-of-learning-spiral-part-four
+(defhydra hydra-of-learning-spiral-part-four (:hint nil)
+ "
+^Commands trying to master
+^----------------------------------------------------------------------------------------
+C-d                 Delete character.
+M-d                 Delete word.
+M-0 C-k             Delete to beginning of the line.
+M-k                 Delete sentence forward.
+C-x DEL             Delete sentence backward.
+                    
+
+^----------------------------------------------------------------------------------------
+_n_ next part of this learning spiral.
+_km_ learning spiral: keybindings mastered
+_c_ learning spiral: concepts trying to master
+_p_ learning spiral: packages trying to master
+_he_ edit /emacs30/my-hydras/my-hydras.el
+_i_  edit init.el
+_l_ edit learning-spiral-hydras.el
+_ri_ reload init.el
+_rh_ reload my-hydras
+_rl_ reload learning-spiral-hydras
+_z_ Return to parent hdyra-of-hydras
+_q_ quit
+^--------------------------------------------------------------------------------------
+"
+("n" hydra-of-learning-spiral-part-five/body :color blue)
+("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
+("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
+("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
+("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
+("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
+("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+("ri" (reload-init) :color blue)
+("rh" (reload-hydras) :color blue)
+("rl" (reload-learning-spiral-hydras) :color blue)
+("z" hydra-of-hydras/body :color blue)
+("q" nil :color blue))
+
+
+;;;# hydra-of-learning-spiral-part-three
 (defhydra hydra-of-learning-spiral-part-three (:hint nil)
   "
  ^Commands trying to master
  ^----------------------------------------------------------------------------------------
- M-x delete-trailing-whitespace
- M-x ispell-region
- M-x ispell-buffer
- M-x flyspell-mode
- M-x lsp
- M-x query-replace
- M-x elispdoc-process-elisp-to-doc
- M-x shell
- M-x eshell
-
- ^----------------------------------------------------------------------------------------
- _km_ learning spiral: keybindings mastered
- _c_ learning spiral: concepts trying to master
- _p_ learning spiral: packages trying to master
- _he_ edit /emacs30/my-hydras/my-hydras.el
- _i_  edit init.el
- _l_ edit learning-spiral-hydras.el
- _ri_ reload init.el
- _rh_ reload my-hydras
- _rl_ reload learning-spiral-hydras
- _z_ Return to parent hdyra-of-hydras
- _q_ quit
- ^------------------------------------------------------------------------------
+ C-w                 Kill region.
+ M-w                 Copy region to kill ring.
+ M-z char            Kill through character char.
+ M-y                 Replace last yank with previous kill.
+ M-x M-x             Exchange point and mark.
+ 
+^----------------------------------------------------------------------------------------
+_n_ next part of this learning spiral.
+_km_ learning spiral: keybindings mastered
+_c_ learning spiral: concepts trying to master
+_p_ learning spiral: packages trying to master
+_he_ edit /emacs30/my-hydras/my-hydras.el
+_i_  edit init.el
+_l_ edit learning-spiral-hydras.el
+_ri_ reload init.el
+_rh_ reload my-hydras
+_rl_ reload learning-spiral-hydras
+_z_ Return to parent hdyra-of-hydras
+_q_ quit
+ ^-----------------------------------------------------------------------------------------
  "
+  ("n" hydra-of-learning-spiral-part-four/body :color blue)
   ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
   ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
   ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
@@ -207,6 +291,7 @@ _q_ quit
  ^Commands trying to master
  ^----------------------------------------------------------------------------------------
  C-x k                 Kill the buffer.
+ C-x s                 Save all files.
  C-x o                 Move cursor to another window.
  C-M-v                 Scroll the other window.
  C-x C-b               Open ibuffer.
@@ -220,9 +305,34 @@ _q_ quit
  M-k                   Kill from the cursor to the end of the sentence.
  C-w                   Kill from mark to cursor.
  C-x b <BufferName>    Visit specific buffer.
- C-z                   Suspend Emacs. Return with `fg'.
-
-  ^----------------------------------------------------------------------------------------
+ C-z                   Suspend terminal or iconify graphical Emacs. Return with `fg'.
+ C-x C-v               Replace file with the file that you want.
+ C-x i                 Insert document into a buffer.
+ C-h                   Show help menu.
+ C-h t                 Help tutorial.
+ C-x 1                 Remove help window.
+ C-M-v                 Scroll help window.
+ C-h a                 Show commands matching a string.
+ C-h k                 Return the command activate by an entered keybinding.
+ C-h f                 Describe a function.
+ C-h m                 Get information about current mode.
+ C-_                   Undo.
+ C-/                   Undo.
+ M-p                   Select previous search string.
+ M-n                   Select next search string.
+ M-{                   Move point back one paragraph.  
+ M-}                   Move point forward one paragraph.
+ C-x [                 Move backward a page.
+ C-x ]                 Move forward a page.
+ C-M-b                 Move back one sexp.
+ C-M-f                 Move forward one sexp.
+ C-M-a                 Move back one function.
+ C-M-e                 Move forward one function.
+ C-v                   Move to next screen.
+ M-v                   Move to previous screen.
+ M-g c                 Goto char.
+ M-m                   Goto the indentation.rl
+ ^----------------------------------------------------------------------------------------
  _n_ next part of this learning spiral.
  _km_ learning spiral: keybindings mastered
  _c_ learning spiral: concepts trying to master
