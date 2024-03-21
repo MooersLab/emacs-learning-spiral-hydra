@@ -262,6 +262,9 @@ _q_ quit
  C-M-h               Mark function.
  C-x h               Mark entire buffer.
  
+ C-x n n             Toggle narrowing on the region. Works in the LateX-mode.
+                     Installed recursive-narrowing package first.
+ 
  M-%                 Iteratively replace a string.
  
  M-u                 Uppercase a word.
