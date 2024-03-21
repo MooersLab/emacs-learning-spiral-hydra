@@ -25,14 +25,15 @@ The above hydras help jump start the use of keybindings, including those that ac
 Hydras demonstrate the highly configurable nature of Emacs.
 These pop-up menus are called hydras because one hydra popup menu can be used to call many other hydra popup menus.
 However, only one hydra is displayed at a time.
+
 I use a hydras of hydras to serve as a port of entry to all of my hydras.
 There is no limit to how deeply the hydras can be nested.
-Because of this feature, the analogy with the mythological beast breaks down to the disappoint of those who know their Greek mythology.
+Because of this feature, the analogy with the mythological beast breaks down to the disappointment of those who know their Greek mythology.
 
 Hydras are often associated with a specific Emacs package for the purpose of easing the use of the functions in that package.
 They provide keyboard shortcuts in the form of single or multiple letters that can be entered in the keyboard or clicked on with the cursor to invoke the associated function.
 In addition to running elisp functions inside of Emacs, hydras can be used to open external applications from inside Emacs, they can be used to open specific files for editing or reading, and they can be used to open specific web pages in your default browser.
-
+The latter two features can be done by using the bookmarks package that is built into Emacs's core.                                                                                                                                                                                                                                                                        
 The blue-colored letters in the snapshot of the hydra below are mapped to commands that are invoked by clicking the letter(s) with the cursor.
 Hydras are used to evade learning the corresponding key bindings.
 
@@ -42,12 +43,12 @@ Here, we take the opposite approach!
 We use the pop-up menu nature of hydras to quickly access a list of Emacs keybindings that we are trying to master by building muscle memory of those key bindings.
 Actually, we are trying to build up muscle memory of the key bindings so that we do not have to recall them when we need to use them.
 We open the pop-up menu by entering `C-c 1`.
-We can close the hydra by clicking on it, by clicking on the `q` button, or by entering \textbf{q} on the keyboard.
+We can close the hydra by clicking on it, by clicking on the **q** button, or by entering **q** on the keyboard.
 
 The lazy way of using this list is to invoke it at the start of work session in Emacs.
 We can scan the list as a quick reminder of the keybindings that we are trying to master.
 A more robust approach would be to set aside several minutes for the purpose of entering each keybinding that we are trying to master 5 or 10 times on the keyboard in order to build muscle memory.
-It is unlikely that you would have time to go to the complete list, but this approach is effective when you work with 5 to 10 keys at a time each day.
+It is unlikely that you would have time to go through the complete list, but this approach is effective when you work with 5 to 10 keys at a time each day.
 The goal is to build up the muscle memory of the key bindings on this list.
 
 After the keybinding is internalized, you can move the keybinding to the list of mastered keybindings in another hdyra that lists the key bindings that you think you have mastered.
@@ -69,7 +70,7 @@ Just click on `n` to advance to the next section of list of keybindings.
 
 ## History
 The hydras in the above file were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
-I think he was using a org file to store this list.
+I think he was using an org file to store this list.
 Here, I am trying to reduce the friction further by the negating the need to navigate to such a file.
 You do not have to remember the name or location of that org file.
 This can be a problem if there has been a long break in the viewing of this file.
@@ -122,7 +123,7 @@ It should work with version 29 of GNU Emacs and perhaps earlier versions of Emac
 
 The configuration below is for the users of the `use-package` package system for managing Emacs packages.
 
-- Customize the file path. I store the file `learning-spiral-hydra.el` inside of the folder `~/emacs30/my-hydras/`.
+- Customize the file path. I store the file `learning-spiral-hydra.el` inside of the folder `~/emacs30/my-hydras/`. I do not use hidden files to store my Emacs configuration.
 - Customize the keybinding below if it conflicts. Check by entering `C-h k C-c 1`, where `C` stands for the Control key and the `-` means press the Control key with the second key simultaneously.
 - Customize the content of each hydra to meet your learning objectives.
 - Add the following lines to your init.el file. The file my-hydra.el is a master hydra for calling other hydras. You do not need it if you are only going to use the emacs-learning-spiral hydra.
