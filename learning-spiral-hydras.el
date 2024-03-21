@@ -15,6 +15,7 @@
 "
 ^Concepts and skills trying to master
 -----------------------------------------------------------------------------
+bookmarks
 LaTeX workflow in Emacs
 lfortran in code-blocks via jupyter org-babel language
 macros
@@ -155,27 +156,38 @@ _q_ quit
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
-
-
-
-;;;# hydra-of-learning-spiral-part-four
-
-(defhydra hydra-of-learning-spiral-part-five (:hint nil)
+;;;# hydra-of-learning-spiral-latex
+(defhydra hydra-of-learning-spiral-latex (:hint nil)
  "
 ^Commands trying to master
 ^----------------------------------------------------------------------------------------
-M-x delete-trailing-whitespace
-M-x ispell-region
-M-x ispell-buffer
-M-x flyspell-mode
-M-x lsp
-M-x query-replace
-M-x query-replace-regexp
-M-x elispdoc-process-elisp-to-doc
-M-x shell
-M-x eshell
-M-x recover-session
-M-x revert-buffer
+C-c C-s      Insert sections and subsections. Will be prompted for title and label.
+C-c C-e      Insert environments.
+C-c ]        Close environment.
+C-x n n      Recursive narrowing, toggle on and off.
+
+C-c C-a      Compile tex file into a PDF.
+M-i          Generate a navigatable TOC of the tex file.
+
+C-c C-j      Add an item to a list.
+C-c %        Comment or uncomment a paragraph.
+C-c ;        Comment or uncomment a region.
+C-c *        Mark a section.
+
+C-c C-o C-f  Toggle folding.
+C-c C-o C-p  Toggle folding or unfolding of current paragraph.
+C-c C-o C-r  Toggle folding or unfolding of current region.
+C-c C-o C-r  Toggle folding or unfolding of current region.
+
+cite        Trigger the loading the bibtex file.
+
+C-c          Open list of suffixes for C-c
+C-c ?        Find documentation.
+C-c TAB      Open the AucTeX manual.
+
+C-c o        Start pomodoro.
+C-c y        open yasnippet hydra
+C-x u        undo
 
 ^----------------------------------------------------------------------------------------
 _km_ learning spiral: keybindings mastered
@@ -204,6 +216,55 @@ _q_ quit
 ("q" nil :color blue))
 
 
+
+;;;# hydra-of-learning-spiral-part-four
+
+(defhydra hydra-of-learning-spiral-part-five (:hint nil)
+ "
+^Commands trying to master
+^----------------------------------------------------------------------------------------
+M-x delete-trailing-whitespace
+M-x ispell-region
+M-x ispell-buffer
+M-x flyspell-mode
+M-x lsp
+M-x query-replace
+M-x query-replace-regexp
+M-x elispdoc-process-elisp-to-doc
+M-x shell
+M-x eshell
+M-x recover-session
+M-x revert-buffer
+
+^----------------------------------------------------------------------------------------
+_a_ auctex and latex learning spiral
+_km_ learning spiral: keybindings mastered
+_c_ learning spiral: concepts trying to master
+_p_ learning spiral: packages trying to master
+_he_ edit /emacs30/my-hydras/my-hydras.el
+_i_  edit init.el
+_l_ edit learning-spiral-hydras.el
+_ri_ reload init.el
+_rh_ reload my-hydras
+_rl_ reload learning-spiral-hydras
+_z_ Return to parent hdyra-of-hydras
+_q_ quit
+^------------------------------------------------------------------------------
+"
+("a" hydra-of-learning-spiral-latex/body :color blue)
+("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
+("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
+("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
+("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
+("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
+("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+("ri" (reload-init) :color blue)
+("rh" (reload-hydras) :color blue)
+("rl" (reload-learning-spiral-hydras) :color blue)
+("z" hydra-of-hydras/body :color blue)
+("q" nil :color blue))
+
+
 ;;;# hydra-of-learning-spiral-part-four
 (defhydra hydra-of-learning-spiral-part-four (:hint nil)
  "
@@ -218,6 +279,7 @@ C-x DEL             Delete sentence backward.
 
 ^----------------------------------------------------------------------------------------
 _n_ next part of this learning spiral.
+_a_ auctex and latex learning spiral
 _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _p_ learning spiral: packages trying to master
@@ -232,6 +294,7 @@ _q_ quit
 ^--------------------------------------------------------------------------------------
 "
 ("n" hydra-of-learning-spiral-part-five/body :color blue)
+("a" hydra-of-learning-spiral-latex/body :color blue)
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
@@ -274,6 +337,7 @@ _q_ quit
  C-x C-l             Lowercase a regin.
 ^----------------------------------------------------------------------------------------
 _n_ next part of this learning spiral.
+_a_ auctex and latex learning spiral
 _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _p_ learning spiral: packages trying to master
@@ -288,6 +352,7 @@ _q_ quit
  ^-----------------------------------------------------------------------------------------
  "
   ("n" hydra-of-learning-spiral-part-four/body :color blue)
+  ("a" hydra-of-learning-spiral-latex/body :color blue)
   ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
   ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
   ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
@@ -352,21 +417,23 @@ _q_ quit
  M-g c                      Goto char.
  M-m                        Goto the indentation.rl
  ^----------------------------------------------------------------------------------------
- _n_ next part of this learning spiral.
- _km_ learning spiral: keybindings mastered
- _c_ learning spiral: concepts trying to master
- _p_ learning spiral: packages trying to master
- _he_ edit /emacs30/my-hydras/my-hydras.el
- _i_  edit init.el
- _l_ edit learning-spiral-hydras.el
- _ri_ reload init.el
- _rh_ reload my-hydras
- _rl_ reload learning-spiral-hydras
- _z_ Return to parent hdyra-of-hydras
+ _n_ Next part of this learning spiral.
+ _a_ Auctex and latex learning spiral.
+ _km_ Learning spiral: keybindings mastered.
+ _c_ Learning spiral: concepts trying to master.
+ _p_ Learning spiral: packages trying to master.
+ _he_ Edit /emacs30/my-hydras/my-hydras.el.
+ _i_  Edit init.el.
+ _l_ Edit learning-spiral-hydras.el.
+ _ri_ Reload init.el.
+ _rh_ Reload my-hydras.
+ _rl_ Reload learning-spiral-hydras.
+ _z_ Return to parent hdyra-of-hydras.
  _q_ quit
  ^------------------------------------------------------------------------------
  "
   ("n" hydra-of-learning-spiral-part-three/body :color blue)
+  ("a" hydra-of-learning-spiral-latex/body :color blue)
   ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
   ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
   ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
@@ -448,6 +515,7 @@ _q_ quit
  ^------------------------------------------------------------------------------
  "
   ("n" hydra-of-learning-spiral-part-two/body :color blue)
+  ("a" hydra-of-learning-spiral-latex/body :color blue)
   ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
   ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
   ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
