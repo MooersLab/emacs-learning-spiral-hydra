@@ -86,7 +86,6 @@ M-x eval-buffer
 M-x reload-hydra (reload my-hydras)
 
 ^------------------------------------------------------------------------------
-
 _c_ learning spiral: concepts trying to master
 _p_ learning spiral: packages trying to master
 _l_ edit learning-spiral-hydras.el
@@ -130,7 +129,7 @@ treesitter
 advanced features of yasnippets
 zetteldesk
 ^------------------------------------------------------------------------------
-_a_ learning spiral: auctex and latex")
+_a_ learning spiral: auctex and latex
 _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _l_ edit learning-spiral-hydras.el
@@ -142,7 +141,6 @@ _z_ Return to parent hdyra-of-hydras
 _q_ quit
 ^------------------------------------------------------------------------------
 "
-
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
@@ -318,13 +316,13 @@ _q_ quit
  C-x n n             Toggle narrowing on the region. Works in the LateX-mode.
                      Installed recursive-narrowing package first.
 
- M-precent sign      Iteratively replace a string.
+ M-percent sign      Iteratively replace a string.
 
  M-u                 Uppercase a word.
  M-l                 Lowercase a word.
  M-c                 Capitalize a word.
  C-x C-u             Uppercase a region.
- C-x C-l             Lowercase a regin.
+ C-x C-l             Lowercase a region.
 ^----------------------------------------------------------------------------------------
 _n_ next part of this learning spiral.
 _a_ auctex and latex learning spiral
