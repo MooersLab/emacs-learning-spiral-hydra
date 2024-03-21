@@ -14,7 +14,7 @@
 (defhydra hydra-of-learning-spiral-concepts-mastered (:hint nil)
 "
 ^Concepts and skills trying to master
------------------------------------------------------------------------------
+^-----------------------------------------------------------------------------
 bookmarks
 LaTeX workflow in Emacs
 lfortran in code-blocks via jupyter org-babel language
@@ -40,7 +40,6 @@ _q_ quit
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
-
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
@@ -54,7 +53,7 @@ _q_ quit
 (defhydra hydra-of-learning-spiral-keybindings-mastered (:hint nil)
 "
 ^Keybindings and commands mastered
-------------------------------------------------------------------------------
+^------------------------------------------------------------------------------
 C-x C-c                Quit Emacs.
 C-g                    Abort command entry.
 C-x C-s                Save buffer to a file.
@@ -130,9 +129,8 @@ org-roam
 treesitter
 advanced features of yasnippets
 zetteldesk
-
 ^------------------------------------------------------------------------------
-
+_a_ learning spiral: auctex and latex")
 _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _l_ edit learning-spiral-hydras.el
@@ -144,6 +142,7 @@ _z_ Return to parent hdyra-of-hydras
 _q_ quit
 ^------------------------------------------------------------------------------
 "
+
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
@@ -152,7 +151,6 @@ _q_ quit
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
-
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
@@ -163,14 +161,15 @@ _q_ quit
 ^----------------------------------------------------------------------------------------
 C-c C-s      Insert sections and subsections. Will be prompted for title and label.
 C-c C-e      Insert environments.
-C-c ]        Close environment.
+C-c close square bracket  Close environment.
+
 C-x n n      Recursive narrowing, toggle on and off.
 
 C-c C-a      Compile tex file into a PDF.
 M-i          Generate a navigatable TOC of the tex file.
 
 C-c C-j      Add an item to a list.
-C-c %        Comment or uncomment a paragraph.
+C-c percent sign        Comment or uncomment a paragraph.
 C-c ;        Comment or uncomment a region.
 C-c *        Mark a section.
 
@@ -197,7 +196,6 @@ _he_ edit /emacs30/my-hydras/my-hydras.el
 _i_  edit init.el
 _l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
-_rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
 _z_ Return to parent hdyra-of-hydras
 _q_ quit
@@ -210,11 +208,9 @@ _q_ quit
 ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
-("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
-
 
 
 ;;;# hydra-of-learning-spiral-part-four
@@ -245,9 +241,8 @@ _he_ edit /emacs30/my-hydras/my-hydras.el
 _i_  edit init.el
 _l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
-_rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
-_z_ Return to parent hdyra-of-hydras
+f_z_ Return to parent hdyra-of-hydras
 _q_ quit
 ^------------------------------------------------------------------------------
 "
@@ -259,7 +254,6 @@ _q_ quit
 ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
-("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
@@ -275,21 +269,18 @@ M-d                 Delete word.
 M-0 C-k             Delete to beginning of the line.
 M-k                 Delete sentence forward.
 C-x DEL             Delete sentence backward.
-                    
-
 ^----------------------------------------------------------------------------------------
 _n_ next part of this learning spiral.
-_a_ auctex and latex learning spiral
-_km_ learning spiral: keybindings mastered
-_c_ learning spiral: concepts trying to master
-_p_ learning spiral: packages trying to master
-_he_ edit /emacs30/my-hydras/my-hydras.el
+_a_ auctex and latex learning spiral.
+_km_ learning spiral: keybindings mastered.
+_c_ learning spiral: concepts trying to master.
+_p_ learning spiral: packages trying to master.
+_he_ edit /emacs30/my-hydras/my-hydras.el.
 _i_ edit init.el
-_l_ edit learning-spiral-hydras.el
-_ri_ reload init.el
-_rh_ reload my-hydras
-_rl_ reload learning-spiral-hydras
-_z_ Return to parent hdyra-of-hydras
+_l_ edit learning-spiral-hydras.el.
+_ri_ reload init.el.
+_rl_ reload learning-spiral-hydras.
+_z_ Return to parent hdyra-of-hydras.
 _q_ quit
 ^--------------------------------------------------------------------------------------
 "
@@ -302,7 +293,6 @@ _q_ quit
 ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
-("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
@@ -318,18 +308,18 @@ _q_ quit
  M-z char            Kill through character char.
  M-y                 Replace last yank with previous kill.
  C-x C-x             Exchange point and mark.
- 
+
  M-h                 Mark paragraph.
  C-x C-p             Mark page.
  C-M-@               Mark sexp
  C-M-h               Mark function.
  C-x h               Mark entire buffer.
- 
+
  C-x n n             Toggle narrowing on the region. Works in the LateX-mode.
                      Installed recursive-narrowing package first.
- 
- M-%                 Iteratively replace a string.
- 
+
+ M-precent sign      Iteratively replace a string.
+
  M-u                 Uppercase a word.
  M-l                 Lowercase a word.
  M-c                 Capitalize a word.
@@ -345,7 +335,6 @@ _he_ edit /emacs30/my-hydras/my-hydras.el
 _i_  edit init.el
 _l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
-_rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
 _z_ Return to parent hdyra-of-hydras
 _q_ quit
@@ -360,7 +349,6 @@ _q_ quit
   ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
   ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
-  ("rh" (reload-hydras) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
   ("z" hydra-of-hydras/body :color blue)
   ("q" nil :color blue))
@@ -404,7 +392,7 @@ _q_ quit
  C-/                        Undo.
  M-p                        Select previous search string.
  M-n                        Select next search string.
- M-{                        Move point back one paragraph.  
+ M-{                        Move point back one paragraph.
  M-}                        Move point forward one paragraph.
  C-x [                      Move backward a page.
  C-x ]                      Move forward a page.
@@ -426,7 +414,6 @@ _q_ quit
  _i_  Edit init.el.
  _l_ Edit learning-spiral-hydras.el.
  _ri_ Reload init.el.
- _rh_ Reload my-hydras.
  _rl_ Reload learning-spiral-hydras.
  _z_ Return to parent hdyra-of-hydras.
  _q_ quit
@@ -441,13 +428,9 @@ _q_ quit
   ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
   ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
-  ("rh" (reload-hydras) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
   ("z" hydra-of-hydras/body :color blue)
   ("q" nil :color blue))
-
-
-
 
 
 ;;;# hydra-of-learning-spiral
@@ -501,6 +484,7 @@ _q_ quit
 
  ^----------------------------------------------------------------------------------------------
  _n_ next part of this learning spiral.
+ _a_ Auctex and latex learning spiral.
  _km_ learning spiral: keybindings mastered
  _c_ learning spiral: concepts trying to master
  _p_ learning spiral: packages trying to master
@@ -508,7 +492,6 @@ _q_ quit
  _i_  edit init.el in Emacs
  _l_ edit learning-spiral-hydras.el in Emacs
  _ri_ reload init.el into Emacs after changing on disk.
- _rh_ reload my-hydras after changing on disk.
  _rl_ reload learning-spiral-hydras after changing on disk.
  _z_ Return to parent hdyra-of-hydras.
  _q_ quit
@@ -523,7 +506,6 @@ _q_ quit
   ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
   ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
-  ("rh" (reload-hydras) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
   ("z" hydra-of-hydras/body :color blue)
   ("q" nil :color blue))
