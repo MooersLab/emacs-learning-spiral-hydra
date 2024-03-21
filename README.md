@@ -5,15 +5,20 @@
 # Lazy mastery of Emacs
 
 ## Brief introduction for the impatient
-The above `learning-spiral-hydras.el` file supports a lazy approach to mastering key bindings (keyboard shortcuts) in Emacs by listing the ones that you are trying to master in a pop-up menu.
+The above `learning-spiral-hydras.el` file supports a lazy approach to mastering key bindings (keyboard shortcuts) in Emacs.
+The ones that you are trying to master are listed in a pop-up menu.
 The pop-up menu is invoked by entering `C-c 1` from any buffer.
 The file is easily edited for customization to meet your needs.
 I expect it to be used as a template.
 If you are a beginning Emacs user, you can use these lists as a means of jump starting your use of Emacs.
 
-The code blockes and snapshots below show the individual hydras.
+The code blocks and snapshots below show the individual hydras.
 The lists of keybindings in these hydras are abbreviated to save space.
-The `learning-spiral-hydras.el` contains my current hydras which have longer lists.
+The `learning-spiral-hydras.el` contains my current hydras, which are greater in number and which have longer lists.
+
+Of course, you can access similar information by using the built-in info system.
+However, beginners tend to be overwhelm by this system. 
+The above hydras help jump start the use of keybindings, including those that access the info system.
 
 ## Longer introduction for the curious
 [Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs--the ultimate text editor.
