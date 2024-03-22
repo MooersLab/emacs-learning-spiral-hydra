@@ -8,7 +8,7 @@
 The above `learning-spiral-hydras.el` file supports a lazy approach to mastering key bindings (keyboard shortcuts) in Emacs.
 The commands that you are trying to master are listed in multi-part pop-up menus.
 The parent pop-up menu is invoked by entering `C-c 1` from any buffer.
-Navigate to the child menus by clicking on the colored letters.
+Navigate to the child menus by clicking on the bluw colored letter.
 Menus specific for particular major modes are under developement.
 One child menu exists for LaTeX-mode.
 
