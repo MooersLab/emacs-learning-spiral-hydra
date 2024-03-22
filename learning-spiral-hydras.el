@@ -206,8 +206,6 @@ C-c = RET    Go to section and hide TOC buffer.
 C-c = SPC    Go to section and do not hide TOC buffer.
 <            Increase the level.     
 >            Reduce the level.
-
-M-%          Search-and-replace regexp in the document.
 ^----------------------------------------------------------------------------------------
 _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
