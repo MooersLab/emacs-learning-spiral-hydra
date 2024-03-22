@@ -157,35 +157,57 @@ _q_ quit
  "
 ^Commands trying to master
 ^----------------------------------------------------------------------------------------
+C-h m        Show information on the current major mode.
+C-c C-h      Shows all bindings that start with C-c.
+C-h b        Shows all bindings currently available.
+
 C-c C-s      Insert sections and subsections. Will be prompted for title and label.
 C-c C-e      Insert environments.
-C-c close square bracket  Close environment.
+C-c ]        Close environment.
+C-u C-c C-e  Change the type of the current innermost environment.
+
+C-c .        Mark the current environment.
+C-c *        Mark the current section/subsection.
+C-c ]        Close current environment.
+C-M-a        Find matching begin environment.
+C-M-e        Find matching end environment.
+C-c C-m      Insert macro.
+
+C-c C-f C-e  Add a emph and place the cursor between the braces. Wrap a selection.
+C-c C-f C-b  Ditto with textbf.
+C-c C-f C-c  Ditto with textsc.
+C-c C-f C-i  Ditto with textit.            
+C-c C-f C-t  Ditto with texttt. 
+C-c C-f ?    Give you a list of all possibilities.
 
 C-x n n      Recursive narrowing, toggle on and off.
-
-C-c C-a      Compile tex file into a PDF.
-M-i          Generate a navigatable TOC of the tex file.
+C-c C-a      Compile file into a PDF.
+C-c C-c      Do the most appropriate compilation activity.\
+C-c C-r      Do appropriate compilation activity to the region that has been pinned by 
+             C-c C-t C-r
+C-c C-v      View document.
 
 C-c C-j      Add an item to a list.
 C-c percent sign        Comment or uncomment a paragraph.
 C-c ;        Comment or uncomment a region.
 C-c *        Mark a section.
-
-C-c C-o C-f  Toggle folding.
-C-c C-o C-p  Toggle folding or unfolding of current paragraph.
-C-c C-o C-r  Toggle folding or unfolding of current region.
-C-c C-o C-r  Toggle folding or unfolding of current region.
-
-cite        Trigger the loading the bibtex file.
+C-c C-o C-b  Toggle folding.
 
 C-c          Open list of suffixes for C-c
 C-c ?        Find documentation.
 C-c TAB      Open the AucTeX manual.
-
 C-c o        Start pomodoro.
-C-c y        open yasnippet hydra
-C-x u        undo
+C-c y        Open yasnippet hydra.
 
+C-c (        Add a label. Autosuggesions based on section.
+C-c )        Add a ref. Select from a list of labels.
+C-c [        Insert citation.
+C-c = RET    Go to section and hide TOC buffer.
+C-c = SPC    Go to section and do not hide TOC buffer.
+<            Increase the level.     
+>            Reduce the level.
+
+M-%          Search-and-replace regexp in the document.
 ^----------------------------------------------------------------------------------------
 _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
