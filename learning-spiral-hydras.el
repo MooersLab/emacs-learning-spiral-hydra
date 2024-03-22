@@ -113,7 +113,6 @@ _q_ quit
 "
 ^Packages trying to master
 ^------------------------------------------------------------------------------
-
 cider
 copilot
 dired
@@ -141,9 +140,9 @@ _z_ Return to parent hdyra-of-hydras
 _q_ quit
 ^------------------------------------------------------------------------------
 "
-("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
-("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
+("a" hydra-of-learning-spiral-latex/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
+("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
 ("s" hydra-of-learning-spiral/body :color blue)
 ("ri" (reload-init) :color blue)
@@ -151,6 +150,7 @@ _q_ quit
 ("rl" (reload-learning-spiral-hydras) :color blue)
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
+
 
 ;;;# hydra-of-learning-spiral-latex
 (defhydra hydra-of-learning-spiral-latex (:hint nil)
@@ -221,9 +221,9 @@ _z_ Return to parent hdyra-of-hydras
 _q_ quit
 ^------------------------------------------------------------------------------
 "
+("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
-("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
 ("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
 ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
