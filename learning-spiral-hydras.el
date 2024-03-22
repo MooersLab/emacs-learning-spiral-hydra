@@ -30,7 +30,7 @@ _s_ Return to learning spiral
 _ri_ reload init.el
 _rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
-_z_ Return to parent hdyra-of-hydras
+_zz_ Return to parent hdyra-of-hydras
 _q_ quit
 ^----------------------------------------------------------------------------
 "
@@ -40,7 +40,7 @@ _q_ quit
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
-("z" hydra-of-hydras/body :color blue)
+("zz" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
 
@@ -93,7 +93,7 @@ _s_ Return to learning spiral
 _ri_ reload init.el
 _rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
-_z_ Return to parent hdyra-of-hydras
+_zz_ Return to parent hdyra-of-hydras
 _q_ quit
 ^------------------------------------------------------------------------------
 "
@@ -104,7 +104,7 @@ _q_ quit
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
-("z" hydra-of-hydras/body :color blue)
+("zz" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
 
@@ -113,10 +113,13 @@ _q_ quit
 "
 ^Packages trying to master
 ^------------------------------------------------------------------------------
+bookmarks+
 cider
 copilot
 dired
 diredx
+hyperbole
+isceles
 lsp-ltex
 lsp-grammarly
 LaTeX-mode
@@ -136,7 +139,7 @@ _s_ Return to learning spiral
 _ri_ reload init.el
 _rh_ reload my-hydras
 _rl_ reload learning-spiral-hydras
-_z_ Return to parent hdyra-of-hydras
+_zz_ Return to parent hdyra-of-hydras
 _q_ quit
 ^------------------------------------------------------------------------------
 "
@@ -148,7 +151,7 @@ _q_ quit
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
-("z" hydra-of-hydras/body :color blue)
+("zz" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
 
@@ -213,7 +216,7 @@ _he_ edit /emacs30/my-hydras/my-hydras.el
 _i_  edit init.el
 _ri_ reload init.el
 _zl_ Return to main learning spiral hydra.
-_z_  Return to parent hdyra-of-hydras
+_zz_  Return to parent hdyra-of-hydras
 _q_  quit
 ^------------------------------------------------------------------------------
 "
@@ -225,8 +228,8 @@ _q_  quit
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
-("zl" hydra-of-hydras/body :color blue)
-("z" hydra-of-hydras/body :color blue)
+("zl" hydra-of-learning-spiral/body :color blue)
+("zz" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
 
@@ -259,7 +262,7 @@ _i_  edit init.el
 _l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
 _rl_ reload learning-spiral-hydras
-f_z_ Return to parent hdyra-of-hydras
+_zz_ Return to parent hdyra-of-hydras
 _q_ quit
 ^------------------------------------------------------------------------------
 "
@@ -272,7 +275,7 @@ _q_ quit
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
-("z" hydra-of-hydras/body :color blue)
+("zz" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
 
@@ -297,7 +300,7 @@ _i_ edit init.el
 _l_ edit learning-spiral-hydras.el.
 _ri_ reload init.el.
 _rl_ reload learning-spiral-hydras.
-_z_ Return to parent hdyra-of-hydras.
+_zz_ Return to parent hdyra-of-hydras.
 _q_ quit
 ^--------------------------------------------------------------------------------------
 "
@@ -311,7 +314,7 @@ _q_ quit
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
-("z" hydra-of-hydras/body :color blue)
+("zz" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
 
@@ -353,7 +356,7 @@ _i_  edit init.el
 _l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
 _rl_ reload learning-spiral-hydras
-_z_ Return to parent hdyra-of-hydras
+_zz_ Return to parent hdyra-of-hydras
 _q_ quit
  ^-----------------------------------------------------------------------------------------
  "
@@ -367,7 +370,7 @@ _q_ quit
   ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
-  ("z" hydra-of-hydras/body :color blue)
+  ("zz" hydra-of-hydras/body :color blue)
   ("q" nil :color blue))
 
 
@@ -432,7 +435,7 @@ _q_ quit
  _l_ Edit learning-spiral-hydras.el.
  _ri_ Reload init.el.
  _rl_ Reload learning-spiral-hydras.
- _z_ Return to parent hdyra-of-hydras.
+ _zz_ Return to parent hdyra-of-hydras.
  _q_ quit
  ^------------------------------------------------------------------------------
  "
@@ -446,7 +449,7 @@ _q_ quit
   ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
-  ("z" hydra-of-hydras/body :color blue)
+  ("zz" hydra-of-hydras/body :color blue)
   ("q" nil :color blue))
 
 
@@ -510,7 +513,7 @@ _q_ quit
  _l_ edit learning-spiral-hydras.el in Emacs
  _ri_ reload init.el into Emacs after changing on disk.
  _rl_ reload learning-spiral-hydras after changing on disk.
- _z_ Return to parent hdyra-of-hydras.
+ _zz_ Return to parent hdyra-of-hydras.
  _q_ quit
  ^------------------------------------------------------------------------------
  "
@@ -524,7 +527,7 @@ _q_ quit
   ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
-  ("z" hydra-of-hydras/body :color blue)
+  ("zz" hydra-of-hydras/body :color blue)
   ("q" nil :color blue))
 
 (provide 'learning-spiral-hydras)
