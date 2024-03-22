@@ -183,8 +183,7 @@ C-c C-f ?    Give you a list of all possibilities.
 C-x n n      Recursive narrowing, toggle on and off.
 C-c C-a      Compile file into a PDF.
 C-c C-c      Do the most appropriate compilation activity.\
-C-c C-r      Do appropriate compilation activity to the region that has been pinned by 
-             C-c C-t C-r
+C-c C-r      Do appropriate compilation activity to the region pinned by C-c C-t C-r
 C-c C-v      View document.
 
 C-c C-j      Add an item to a list.
@@ -208,15 +207,14 @@ C-c = SPC    Go to section and do not hide TOC buffer.
 >            Reduce the level.
 ^----------------------------------------------------------------------------------------
 _km_ learning spiral: keybindings mastered
-_c_ learning spiral: concepts trying to master
-_p_ learning spiral: packages trying to master
+_c_  learning spiral: concepts trying to master
+_p_  learning spiral: packages trying to master
 _he_ edit /emacs30/my-hydras/my-hydras.el
 _i_  edit init.el
-_l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
-_rl_ reload learning-spiral-hydras
-_z_ Return to parent hdyra-of-hydras
-_q_ quit
+_zl_ Return to main learning spiral hydra.
+_z_  Return to parent hdyra-of-hydras
+_q_  quit
 ^------------------------------------------------------------------------------
 "
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
@@ -227,6 +225,7 @@ _q_ quit
 ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
+("zl" hydra-of-hydras/body :color blue)
 ("z" hydra-of-hydras/body :color blue)
 ("q" nil :color blue))
 
