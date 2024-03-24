@@ -300,35 +300,38 @@ _q_ quit
 
 ## hydra-of-learning-spiral
 This is the master hydra that lists the commands that I am trying to master.
-This hydra also calls subsidiary hydras that list the following:
+This Hydra also calls several child Hydras that list the following:
 
 - the keybindings that I think I have mastered
 - the concepts that I am trying to master
 - the packages that I am trying to master
 
+The current version of the list of keybindings to master spans multiple Hydras.
+There is a blue-colored letter **n** that you click on to advance to the next hydra in the series.
+
 ```elisp
 (defhydra hydra-of-learning-spiral (:hint nil)
 "
  ^Commands trying to master
- ------------------------------------------------------------------------------
- C-c =                 Use in auctex-mode to display TOC of document in separate buffer
+ --------------------------------------------------------------------------------------------
+ C-c =                 Use in auctex-mode to display TOC of the document in a separate buffer
  C-c d                 Display pop-up with info about text file including word count
- C-h l                 Display list of last commands
+ C-h l                 Display list of the last commands execute
  s-,                   Open the customize buffer
  C-[scrollwheel-up]    zoom text in
  C-[scrollwheel-down]  zoom text out
 
  M-x delete-trailing-whitespace
  M-x lsp
- M-x query-replace M-precent sign
+ M-x query-replace M-percent sign
  M-x elispdoc-process-elisp-to-doc-buffer
 
 
- ^------------------------------------------------------------------------------
+ ^-------------------------------------------------------------------------------------------
 
- _km_ learning spral: keybindings mastered
+ _km_ learning spiral: keybindings mastered
  _c_ learning spiral: concepts trying to master
- _p_ learning sprial: packages trying to master
+ _p_ learning spiral: packages trying to master
  _he_ edit /emacs30/my-hydras/my-hydras.el
  _i_  edit init.el
  _ri_ reload init.el
