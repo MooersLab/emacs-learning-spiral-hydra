@@ -237,7 +237,7 @@ C-x 1                  Display only one buffer
 C-c 0                  Display hydra-of-hydras
 C-y                    Paste
 C-w                    Cut
-s-c                    Copy
+M-w                    Copy
 C-c 0                  Display master hydra
 C-c 1                  Display learning spiral hdyra
 
