@@ -13,7 +13,7 @@ This is a learning aid, not a crutch.
 The parent pop-up menu is invoked by entering `C-c 1` from any buffer.
 Navigate to the child menus by clicking on the blue colored letter.
 Each child menu is a separate Hydra.
-Feel free to break these Hydras into a standalone Hydras.
+Feel free to break these Hydras into standalone Hydras.
 
 Menus (Hydras) specific to particular major modes and packages are under development as separate Hydras to minimize the nesting of Hydras.
 One child menu exists for LaTeX-mode.
@@ -36,21 +36,21 @@ Hydras demonstrate the highly configurable nature of Emacs.
 These pop-up menus are called Hydras because one Hydra popup menu can be used to call many other Hydra popup menus.
 However, only one Hydra is displayed at a time.
 
-I use a **Hydras of Hydras** as a port of entry to all of my Hydras.
+I use a **Hydras of Hydras** as a port of entry to all my Hydras.
 There is no limit to how deeply the Hydras can be nested.
 Because of this feature, the analogy with the mythological beast breaks down to the disappointment of those who know their Greek mythology.
 
 Hydras are often associated with a specific Emacs package to ease the use of the functions in that package.
 They provide shortcuts in single or multiple letters that can be entered on the keyboard or clicked on with the cursor to invoke the associated function.
-In addition to running elisp functions inside Emacs, Hydras can be used to open external applications from inside Emacs, open specific files for editing or reading, and open specific web pages in your default browser.
+In addition to running elisp functions inside Emacs, Hydras can open external applications from inside Emacs, open specific files for editing or reading, and open specific web pages in your default browser.
 The latter two features can be done using the bookmarks package built into Emacs's core.                                                                                                                                                                                                                                                                        
-The blue-colored letters in the snapshot of the Hydra below are mapped to commands that are invoked by clicking the letter(s) with the cursor.
+The blue-colored letters in the snapshot of the Hydra below are mapped to commands invoked by clicking the letter(s) with the cursor.
 Hydras are used to evade learning the corresponding key bindings.
 
 <p align="center"><img src="./images/master-buffer.png" alt="HTML5 Icon" style="width:800px"></p>
 
 Here, we take the opposite approach!
-We use Hydras's pop-up menu to quickly access a list of Emacs keybindings that we are trying to master by building muscle memory of.
+We use Hydras's pop-up menu to quickly access a list of Emacs keybindings for which we are trying to build muscle memory.
 We are trying to build up muscle memory of the key bindings so that we do not have to recall them when we need to use them.
 We open the pop-up menu by entering `C-c 1`.
 We can close the Hydra by clicking on it, the **q** button, or entering **q** on the keyboard.
@@ -58,12 +58,12 @@ We can close the Hydra by clicking on it, the **q** button, or entering **q** on
 The lazy way of using this list is to invoke it at the start of a work session in Emacs.
 We can scan the list as a quick reminder of the keybindings we are trying to master.
 A more robust approach would be to set aside several minutes to enter each keybinding that we are trying to master five or ten times on the keyboard in order to build muscle memory.
-You would unlikely have time to go through the complete list, but this approach is effective when you work with 5 to 10 keys at a time each day.
+You would unlikely have time to go through the complete list, but this approach is practical when working with 5 to 10 new keybindings daily.
 The goal is to build up the muscle memory of the key bindings on this list.
 
-After the keybinding is internalized, you can move it to the list of mastered keybindings in another hdyra that lists the keybindings that you think you have mastered.
-The list of mastered key bindings can be reviewed occasionally to check that you really have mastered these key bindings.
-You invoke this the second Hydra by clicking on the `km` button: `km` represents `keybindings mastered`.
+After the keybinding is internalized, you can move it to the list of mastered keybindings in another hydra that lists the keybindings you think you have mastered.
+The list of mastered key bindings can be reviewed occasionally to ensure that you have mastered them.
+You invoke this second Hydra by clicking the `km` button: `km` represents `keybindings mastered`.
 
 You can use the Hydras in the above `learning-spiral-hydra.el` file as templates to make additional Hydras.
 For example, you might want a Hydra that is specific to a particular package or major mode that has a long list of key bindings that you are trying to master.
@@ -71,10 +71,10 @@ These related key bindings could be stored in a separate Hydra to reduce the clu
 
 There is a limit to how many key bindings you can display in a Hydra.
 The font size and the height of your computer screen impose the limit.
-You can only zoom out so far before the font grows too small to see.
+You can only zoom out so far before the font grows too tiny to see.
 
 You can display the keybindings in multiple columns.
-I have yet to master setting up multiple columns in an easy way so I tend to avoid this tactic.
+I have yet to master setting up multiple columns in an easy way, so I tend to avoid this tactic.
 I find it easier to create a second Hydra when there are overflow key bindings.
 Just click on `n` to advance to the next section of the list of keybindings.
 
@@ -83,7 +83,7 @@ The Hydras in the above file were inspired by a discussion at a recent Austin Em
 I think he was using an org file to store this list.
 I am reducing the friction further by negating the need to navigate to such a file.
 You do not have to remember the name or location of that org file.
-This can be a problem if there has been a long break in the viewing of this file.
+This can be a problem if there has been a long break in viewing this file.
 Just enter `C-c 1` from any buffer to display the master learning spiral Hydra.
 The use of the master Hydra has a lower energy barrier than navigating to a text file.
 
@@ -92,7 +92,7 @@ The use of the master Hydra has a lower energy barrier than navigating to a text
 ### Emacs quizzes
 A more active means of mastering the keybindings is to take [quizzes](https://github.com/MooersLab/qemacs) about them.
 The above PDFs of quiz questions can be printed, and the quiz can be taken away from the computer.
-These quizzes can be taken when you have time to kill, such as when standing in the boarding line at the airport, commuting on public transit, or waiting for a seminar to start.
+These quizzes can be taken when you have time to kill, such as standing in the airport boarding line, commuting on public transit, or waiting for a seminar to start.
 
 <!--
 Coming Soon:  Interactive Python-based quizzes can be run in the terminal or in Jupyter or Colab notebooks using the `%run` line magic.
@@ -104,17 +104,17 @@ Coming Soon: I plan to create Hydras that list the questions to ease access to r
 ### Related Desktop Wallpaper
 
 I made a desktop [wallpaper of common Emacs keybindings](https://codeberg.org/MooersLab/EmacsWallPaper).
-Sometimes this is useful to quickly find out what keybindings you have not mastered in Emacs.
+Sometimes this is useful to quickly discover what keybindings you have not mastered in Emacs.
 It is a more passive and lazier approach.
-It might be useful for some beginners.
+It might be helpful for some beginners.
 You can use it as a template to create your own.
 
 
 ## Installation
 
 Install where you see fit.
-My emacs directory (i.e., `~/emacs30`) is not a hidden folder, unlike what is recommended.
-I store my Hydras in a subfolder called `my-hydras` (i.e., `~/emacs30/my-hydras`).
+My emacs directory (i.e., `~/emacs29`) is not a hidden folder, unlike what is recommended.
+I store my Hydras in a subfolder called `my-hydras` (i.e., `~/emacs29/my-hydras`).
 
 
 ```elisp
@@ -133,14 +133,14 @@ It should work with version 29 of GNU Emacs and perhaps earlier versions of Emac
 
 The configuration below is for the users of the `use-package` package system for managing Emacs packages.
 
-- Customize the file path. I store the file `learning-spiral-hydra.el` inside of the folder `~/emacs30/my-hydras/`. I do not use hidden files to store my Emacs configuration.
+- Customize the file path. I store the file `learning-spiral-hydra.el` inside of the folder `~/emacs29/my-hydras/`. I do not use hidden files to store my Emacs configuration.
 - Customize the keybinding below if it conflicts. Check by entering `C-h k C-c 1`, where `C` stands for the Control key and the `-` means press the Control key with the second key simultaneously.
 - Customize the content of each Hydra to meet your learning objectives.
 - Add the following lines to your init.el file. The file my-hydra.el is a master Hydra for calling other Hydras. You do not need it if you are only going to use the emacs-learning-spiral Hydra.
 
 ```elisp
 (use-package learning-spiral-hydras
-  :load-path "~/emacs30/my-hydras/")
+  :load-path "~/emacs29/my-hydras/")
 (global-set-key (kbd "C-c 1") 'hydra-of-learning-spiral/body)
 
 ;;;## reload-init
@@ -148,19 +148,19 @@ The configuration below is for the users of the `use-package` package system for
 (defun reload-init ()
   "Reload my init.el file. Edit the path to suite your needs."
   (interactive)
-  (load-file "~/emacs30/init.el"))
+  (load-file "~/emacs29/init.el"))
 
 ;;;## reload-hydras
 (defun reload-hydras ()
   "Reload my-hydras.el. Edit the path to suite your needs."
   (interactive)
-  (load-file "~/emacs30/my-hydras/my-hydras.el"))
+  (load-file "~/emacs29/my-hydras/my-hydras.el"))
 
 ;;;## reload-learning-spiral-hydras
 (defun reload-learning-spiral-hydras ()
   "Reload learning-spiral-hydras.el. Edit the path to suite your needs."
   (interactive)
-  (load-file "~/emacs30/my-hydras/learning-spiral-hydras.el"))
+  (load-file "~/emacs29/my-hydras/learning-spiral-hydras.el"))
 ```
 
 #### Caveats
@@ -332,7 +332,7 @@ There is a blue-colored letter **n** that you click on to advance to the next hy
  _km_ learning spiral: keybindings mastered
  _c_ learning spiral: concepts trying to master
  _p_ learning spiral: packages trying to master
- _he_ edit /emacs30/my-hydras/my-hydras.el
+ _he_ edit /emacs29/my-hydras/my-hydras.el
  _i_  edit init.el
  _ri_ reload init.el
  _rh_ reload hydras
@@ -343,8 +343,8 @@ There is a blue-colored letter **n** that you click on to advance to the next hy
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
-("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
-("i"  (find-file "/Users/blaine/emacs30/init.el") :color blue)
+("he" (find-file "/Users/blaine/emacs29/my-hydras/my-hydras.el") :color blue)
+("i"  (find-file "/Users/blaine/emacs29/init.el") :color blue)
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
 ("z" hydra-of-hydras/body :color blue)
