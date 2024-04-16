@@ -99,7 +99,7 @@ _q_ quit
 "
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
-("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+("l" (find-file "/Users/blaine/emacs29/my-hydras/learning-spiral-hydras.el") :color blue)
 ("s" hydra-of-learning-spiral/body :color blue)
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
@@ -146,7 +146,7 @@ _q_ quit
 ("a" hydra-of-learning-spiral-latex/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
-("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+("l" (find-file "/Users/blaine/emacs29/my-hydras/learning-spiral-hydras.el") :color blue)
 ("s" hydra-of-learning-spiral/body :color blue)
 ("ri" (reload-init) :color blue)
 ("rh" (reload-hydras) :color blue)
@@ -212,7 +212,7 @@ C-c = SPC    Go to section and do not hide TOC buffer.
 _km_ learning spiral: keybindings mastered
 _c_  learning spiral: concepts trying to master
 _p_  learning spiral: packages trying to master
-_he_ edit /emacs30/my-hydras/my-hydras.el
+_he_ edit /emacs29/my-hydras/my-hydras.el
 _i_  edit init.el
 _ri_ reload init.el
 _zl_ Return to main learning spiral hydra.
@@ -223,9 +223,9 @@ _q_  quit
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
-("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
-("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
-("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+("he" (find-file "/Users/blaine/emacs29/my-hydras/my-hydras.el") :color blue)
+("i" (find-file "/Users/blaine/emacs29/init.el") :color blue)
+("l" (find-file "/Users/blaine/emacs29/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
 ("zl" hydra-of-learning-spiral/body :color blue)
@@ -257,7 +257,7 @@ _a_ auctex and latex learning spiral
 _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _p_ learning spiral: packages trying to master
-_he_ edit /emacs30/my-hydras/my-hydras.el
+_he_ edit /emacs29/my-hydras/my-hydras.el
 _i_  edit init.el
 _l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
@@ -270,9 +270,9 @@ _q_ quit
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
-("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
-("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
-("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+("he" (find-file "/Users/blaine/emacs29/my-hydras/my-hydras.el") :color blue)
+("i" (find-file "/Users/blaine/emacs29/init.el") :color blue)
+("l" (find-file "/Users/blaine/emacs29/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
 ("zz" hydra-of-hydras/body :color blue)
@@ -295,7 +295,7 @@ _a_ auctex and latex learning spiral.
 _km_ learning spiral: keybindings mastered.
 _c_ learning spiral: concepts trying to master.
 _p_ learning spiral: packages trying to master.
-_he_ edit /emacs30/my-hydras/my-hydras.el.
+_he_ edit /emacs29/my-hydras/my-hydras.el.
 _i_ edit init.el
 _l_ edit learning-spiral-hydras.el.
 _ri_ reload init.el.
@@ -309,9 +309,9 @@ _q_ quit
 ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
 ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
 ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
-("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
-("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
-("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+("he" (find-file "/Users/blaine/emacs29/my-hydras/my-hydras.el") :color blue)
+("i" (find-file "/Users/blaine/emacs29/init.el") :color blue)
+("l" (find-file "/Users/blaine/emacs29/my-hydras/learning-spiral-hydras.el") :color blue)
 ("ri" (reload-init) :color blue)
 ("rl" (reload-learning-spiral-hydras) :color blue)
 ("zz" hydra-of-hydras/body :color blue)
@@ -351,7 +351,7 @@ _a_ auctex and latex learning spiral
 _km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 _p_ learning spiral: packages trying to master
-_he_ edit /emacs30/my-hydras/my-hydras.el
+_he_ edit /emacs29/my-hydras/my-hydras.el
 _i_  edit init.el
 _l_ edit learning-spiral-hydras.el
 _ri_ reload init.el
@@ -365,9 +365,9 @@ _q_ quit
   ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
   ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
   ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
-  ("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
-  ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
-  ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+  ("he" (find-file "/Users/blaine/emacs29/my-hydras/my-hydras.el") :color blue)
+  ("i" (find-file "/Users/blaine/emacs29/init.el") :color blue)
+  ("l" (find-file "/Users/blaine/emacs29/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
   ("zz" hydra-of-hydras/body :color blue)
@@ -430,7 +430,7 @@ _q_ quit
  _km_ Learning spiral: keybindings mastered.
  _c_ Learning spiral: concepts trying to master.
  _p_ Learning spiral: packages trying to master.
- _he_ Edit /emacs30/my-hydras/my-hydras.el.
+ _he_ Edit /emacs29/my-hydras/my-hydras.el.
  _i_  Edit init.el.
  _l_ Edit learning-spiral-hydras.el.
  _ri_ Reload init.el.
@@ -444,9 +444,9 @@ _q_ quit
   ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
   ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
   ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
-  ("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
-  ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
-  ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+  ("he" (find-file "/Users/blaine/emacs29/my-hydras/my-hydras.el") :color blue)
+  ("i" (find-file "/Users/blaine/emacs29/init.el") :color blue)
+  ("l" (find-file "/Users/blaine/emacs29/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
   ("zz" hydra-of-hydras/body :color blue)
@@ -508,7 +508,7 @@ _q_ quit
  _km_ learning spiral: keybindings mastered
  _c_ learning spiral: concepts trying to master
  _p_ learning spiral: packages trying to master
- _he_ edit /emacs30/my-hydras/my-hydras.el
+ _he_ edit /emacs29/my-hydras/my-hydras.el
  _i_  edit init.el in Emacs
  _l_ edit learning-spiral-hydras.el in Emacs
  _ri_ reload init.el into Emacs after changing on disk.
@@ -522,9 +522,9 @@ _q_ quit
   ("c" hydra-of-learning-spiral-concepts-mastered/body :color blue)
   ("p" hydra-of-learning-spiral-packages-mastered/body :color blue)
   ("km" hydra-of-learning-spiral-keybindings-mastered/body :color blue)
-  ("he" (find-file "/Users/blaine/emacs30/my-hydras/my-hydras.el") :color blue)
-  ("i" (find-file "/Users/blaine/emacs30/init.el") :color blue)
-  ("l" (find-file "/Users/blaine/emacs30/my-hydras/learning-spiral-hydras.el") :color blue)
+  ("he" (find-file "/Users/blaine/emacs29/my-hydras/my-hydras.el") :color blue)
+  ("i" (find-file "/Users/blaine/emacs29/init.el") :color blue)
+  ("l" (find-file "/Users/blaine/emacs29/my-hydras/learning-spiral-hydras.el") :color blue)
   ("ri" (reload-init) :color blue)
   ("rl" (reload-learning-spiral-hydras) :color blue)
   ("zz" hydra-of-hydras/body :color blue)
