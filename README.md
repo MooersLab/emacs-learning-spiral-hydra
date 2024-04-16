@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=emacs-learning-sprial-hydra&message=0.5&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=emacs-learning-sprial-hydra&message=0.6&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -24,11 +24,11 @@ If you are a beginning Emacs user, you can use these lists to jump-start your us
 
 The code blocks and snapshots below show the individual hydras.
 The lists of keybindings in these hydras are abbreviated to save space.
-The `learning-spiral-hydras.el` contains my current GNU Emacs core hydras, which are greater in number than in the lists shown below.
+The `learning-spiral-hydras.el` contains my current GNU Emacs core hydras, which are more numerous than those in the lists shown below.
 
 Of course, you can access similar information by using the built-in info system.
-However, beginners tend to need help with this very rich and large system. 
-The above may Hydras help beginners jump-start the use of the keybindings, including those that access the info system.
+However, beginners need help with this large system. 
+The above may Hydras help beginners jump-start using the keybindings, including those that access the info system.
 
 ## Longer introduction for the curious
 [Hydras](https://github.com/abo-abo/hydra) are popup menus in Emacs--the ultimate text editor that is ``hard to learn but easy to use''.
@@ -36,32 +36,32 @@ Hydras demonstrate the highly configurable nature of Emacs.
 These pop-up menus are called Hydras because one Hydra popup menu can be used to call many other Hydra popup menus.
 However, only one Hydra is displayed at a time.
 
-I use a Hydras of Hydras to serve as a port of entry to all of my Hydras.
+I use a **Hydras of Hydras** as a port of entry to all of my Hydras.
 There is no limit to how deeply the Hydras can be nested.
 Because of this feature, the analogy with the mythological beast breaks down to the disappointment of those who know their Greek mythology.
 
-Hydras are often associated with a specific Emacs package for the purpose of easing the use of the functions in that package.
-They provide keyboard shortcuts in the form of single or multiple letters that can be entered in the keyboard or clicked on with the cursor to invoke the associated function.
-In addition to running elisp functions inside of Emacs, Hydras can be used to open external applications from inside Emacs, they can be used to open specific files for editing or reading, and they can be used to open specific web pages in your default browser.
-The latter two features can be done by using the bookmarks package that is built into Emacs's core.                                                                                                                                                                                                                                                                        
+Hydras are often associated with a specific Emacs package to ease the use of the functions in that package.
+They provide shortcuts in single or multiple letters that can be entered on the keyboard or clicked on with the cursor to invoke the associated function.
+In addition to running elisp functions inside Emacs, Hydras can be used to open external applications from inside Emacs, open specific files for editing or reading, and open specific web pages in your default browser.
+The latter two features can be done using the bookmarks package built into Emacs's core.                                                                                                                                                                                                                                                                        
 The blue-colored letters in the snapshot of the Hydra below are mapped to commands that are invoked by clicking the letter(s) with the cursor.
 Hydras are used to evade learning the corresponding key bindings.
 
 <p align="center"><img src="./images/master-buffer.png" alt="HTML5 Icon" style="width:800px"></p>
 
 Here, we take the opposite approach!
-We use the pop-up menu nature of Hydras to quickly access a list of Emacs keybindings that we are trying to master by building muscle memory of those key bindings.
-Actually, we are trying to build up muscle memory of the key bindings so that we do not have to recall them when we need to use them.
+We use Hydras's pop-up menu to quickly access a list of Emacs keybindings that we are trying to master by building muscle memory of.
+We are trying to build up muscle memory of the key bindings so that we do not have to recall them when we need to use them.
 We open the pop-up menu by entering `C-c 1`.
-We can close the Hydra by clicking on it, by clicking on the **q** button, or by entering **q** on the keyboard.
+We can close the Hydra by clicking on it, the **q** button, or entering **q** on the keyboard.
 
 The lazy way of using this list is to invoke it at the start of a work session in Emacs.
-We can scan the list as a quick reminder of the keybindings that we are trying to master.
-A more robust approach would be to set aside several minutes for the purpose of entering each keybinding that we are trying to master 5 or 10 times on the keyboard in order to build muscle memory.
-It is unlikely that you would have time to go through the complete list, but this approach is effective when you work with 5 to 10 keys at a time each day.
+We can scan the list as a quick reminder of the keybindings we are trying to master.
+A more robust approach would be to set aside several minutes to enter each keybinding that we are trying to master five or ten times on the keyboard in order to build muscle memory.
+You would unlikely have time to go through the complete list, but this approach is effective when you work with 5 to 10 keys at a time each day.
 The goal is to build up the muscle memory of the key bindings on this list.
 
-After the keybinding is internalized, you can move the keybinding to the list of mastered keybindings in another hdyra that lists the key bindings that you think you have mastered.
+After the keybinding is internalized, you can move it to the list of mastered keybindings in another hdyra that lists the keybindings that you think you have mastered.
 The list of mastered key bindings can be reviewed occasionally to check that you really have mastered these key bindings.
 You invoke this the second Hydra by clicking on the `km` button: `km` represents `keybindings mastered`.
 
@@ -69,45 +69,45 @@ You can use the Hydras in the above `learning-spiral-hydra.el` file as templates
 For example, you might want a Hydra that is specific to a particular package or major mode that has a long list of key bindings that you are trying to master.
 These related key bindings could be stored in a separate Hydra to reduce the clutter of the master Hydra.
 
-There is a limit to how many key bindings that you can display in a Hydra.
-The limit is imposed by the size of the font and the height of your computer screen.
+There is a limit to how many key bindings you can display in a Hydra.
+The font size and the height of your computer screen impose the limit.
 You can only zoom out so far before the font grows too small to see.
 
 You can display the keybindings in multiple columns.
 I have yet to master setting up multiple columns in an easy way so I tend to avoid this tactic.
-I find it easier to create a second Hydra when there is an overflow key bindings.
-Just click on `n` to advance to the next section of list of keybindings.
+I find it easier to create a second Hydra when there are overflow key bindings.
+Just click on `n` to advance to the next section of the list of keybindings.
 
 ## History
 The Hydras in the above file were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
 I think he was using an org file to store this list.
-Here, I am trying to reduce the friction further by the negating the need to navigate to such a file.
+I am reducing the friction further by negating the need to navigate to such a file.
 You do not have to remember the name or location of that org file.
 This can be a problem if there has been a long break in the viewing of this file.
 Just enter `C-c 1` from any buffer to display the master learning spiral Hydra.
 The use of the master Hydra has a lower energy barrier than navigating to a text file.
 
 
-## Related repos
+## Related repositories
 ### Emacs quizzes
 A more active means of mastering the keybindings is to take [quizzes](https://github.com/MooersLab/qemacs) about them.
-The above PDFs of quiz questions can be printed, and the quiz can be taken while away from the computer.
-These quizzes can be taken when you have time to kill like standing in the boarding line at the airport, commuting on public transit, or waiting for a seminar to start.
+The above PDFs of quiz questions can be printed, and the quiz can be taken away from the computer.
+These quizzes can be taken when you have time to kill, such as when standing in the boarding line at the airport, commuting on public transit, or waiting for a seminar to start.
 
 <!--
-Coming Soon:  Interactive Python based quizzes can be run in the terminal or in Jupyter or Colab notebooks using the `%run` line magic.
+Coming Soon:  Interactive Python-based quizzes can be run in the terminal or in Jupyter or Colab notebooks using the `%run` line magic.
 A set of quiz questions written in Elisp is also available for running in the minibuffer of Emacs.
 You can search for a topic in the quiz question set via the minibuffer.
 Coming Soon: I plan to create Hydras that list the questions to ease access to relevant questions that relate to your task at hand.
 -->
 
-### Related with Desktop Wallpaper
+### Related Desktop Wallpaper
 
 I made a desktop [wallpaper of common Emacs keybindings](https://codeberg.org/MooersLab/EmacsWallPaper).
 Sometimes this is useful to quickly find out what keybindings you have not mastered in Emacs.
 It is a more passive and lazier approach.
 It might be useful for some beginners.
-You can use it a template to create your own.
+You can use it as a template to create your own.
 
 
 ## Installation
@@ -316,7 +316,7 @@ There is a blue-colored letter **n** that you click on to advance to the next hy
  --------------------------------------------------------------------------------------------
  C-c =                 Use in auctex-mode to display TOC of the document in a separate buffer
  C-c d                 Display pop-up with info about text file including word count
- C-h l                 Display list of the last commands execute
+ C-h l                 Display list of the last commands executed
  s-,                   Open the customize buffer
  C-[scrollwheel-up]    zoom text in
  C-[scrollwheel-down]  zoom text out
@@ -360,7 +360,7 @@ NIH: P20GM103640 and P30GM145423 (PI: A. West)
 
 |Version      | Changes                                                                                                                                    | Date                 |
 |:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
-| Version 0.4 |  Added funding sources and update table  to README.md.                                                                                    | 2024 April 16        |
+| Version 0.6 |  Added funding sources and update table  to README.md.  Fixed typos in README.md                                                                                  | 2024 April 16        |
 
 
 
