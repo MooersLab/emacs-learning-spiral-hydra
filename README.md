@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=emacs-learning-sprial-hydra&message=0.6&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=emacs-learning-sprial-hydra&message=0.6.1&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -27,7 +27,7 @@ The lists of keybindings in these hydras are abbreviated to save space.
 The `learning-spiral-hydras.el` contains my current GNU Emacs core hydras, which are more numerous than those in the lists shown below.
 
 Of course, you can access similar information by using the built-in info system.
-However, beginners need help with this large system. 
+However, beginners need help with this extensive system. 
 The above may Hydras help beginners jump-start using the keybindings, including those that access the info system.
 
 ## Longer introduction for the curious
@@ -57,16 +57,16 @@ We can close the Hydra by clicking on it, the **q** button, or entering **q** on
 
 The lazy way of using this list is to invoke it at the start of a work session in Emacs.
 We can scan the list as a quick reminder of the keybindings we are trying to master.
-A more robust approach would be to set aside several minutes to enter each keybinding that we are trying to master five or ten times on the keyboard in order to build muscle memory.
-You would unlikely have time to go through the complete list, but this approach is practical when working with 5 to 10 new keybindings daily.
-The goal is to build up the muscle memory of the key bindings on this list.
+A more robust approach would be to set aside several minutes to enter each keybinding we are trying to master five or ten times on the keyboard to build muscle memory.
+You would unlikely have time to review the complete list, but this approach is practical when working with 5 to 10 new keybindings daily.
+The goal is to build the muscle memory of the key bindings on this list.
 
 After the keybinding is internalized, you can move it to the list of mastered keybindings in another hydra that lists the keybindings you think you have mastered.
-The list of mastered key bindings can be reviewed occasionally to ensure that you have mastered them.
+The list of mastered key bindings can be reviewed occasionally to ensure you have mastered them.
 You invoke this second Hydra by clicking the `km` button: `km` represents `keybindings mastered`.
 
 You can use the Hydras in the above `learning-spiral-hydra.el` file as templates to make additional Hydras.
-For example, you might want a Hydra that is specific to a particular package or major mode that has a long list of key bindings that you are trying to master.
+For example, you might want a Hydra specific to a particular package or major mode with a long list of key bindings you are trying to master.
 These related key bindings could be stored in a separate Hydra to reduce the clutter of the master Hydra.
 
 There is a limit to how many key bindings you can display in a Hydra.
@@ -79,11 +79,11 @@ I find it easier to create a second Hydra when there are overflow key bindings.
 Just click on `n` to advance to the next section of the list of keybindings.
 
 ## History
-The Hydras in the above file were inspired by a discussion at a recent Austin Emacs Meetup where Ag mentioned maintaining a list of keybindings that he was trying to master.
+The Hydras in the above file were inspired by a recent Austin Emacs Meetup discussion where Ag mentioned maintaining a list of keybindings that he was trying to master.
 I think he was using an org file to store this list.
 I am reducing the friction further by negating the need to navigate to such a file.
 You do not have to remember the name or location of that org file.
-This can be a problem if there has been a long break in viewing this file.
+This can be a problem if there has been a long break from viewing this file.
 Just enter `C-c 1` from any buffer to display the master learning spiral Hydra.
 The use of the master Hydra has a lower energy barrier than navigating to a text file.
 
@@ -91,14 +91,14 @@ The use of the master Hydra has a lower energy barrier than navigating to a text
 ## Related repositories
 ### Emacs quizzes
 A more active means of mastering the keybindings is to take [quizzes](https://github.com/MooersLab/qemacs) about them.
-The above PDFs of quiz questions can be printed, and the quiz can be taken away from the computer.
+The above PDFs of quiz questions can be printed, and the quiz can be taken when away from the computer.
 These quizzes can be taken when you have time to kill, such as standing in the airport boarding line, commuting on public transit, or waiting for a seminar to start.
 
 <!--
-Coming Soon:  Interactive Python-based quizzes can be run in the terminal or in Jupyter or Colab notebooks using the `%run` line magic.
+Coming Soon:  Interactive Python-based quizzes can be run in the terminal, Jupyter, or Colab notebooks using the `%run` line magic.
 A set of quiz questions written in Elisp is also available for running in the minibuffer of Emacs.
 You can search for a topic in the quiz question set via the minibuffer.
-Coming Soon: I plan to create Hydras that list the questions to ease access to relevant questions that relate to your task at hand.
+Coming Soon: I plan to create Hydras that list the questions to ease access to relevant questions related to your task.
 -->
 
 ### Related Desktop Wallpaper
@@ -136,7 +136,7 @@ The configuration below is for the users of the `use-package` package system for
 - Customize the file path. I store the file `learning-spiral-hydra.el` inside of the folder `~/emacs29/my-hydras/`. I do not use hidden files to store my Emacs configuration.
 - Customize the keybinding below if it conflicts. Check by entering `C-h k C-c 1`, where `C` stands for the Control key and the `-` means press the Control key with the second key simultaneously.
 - Customize the content of each Hydra to meet your learning objectives.
-- Add the following lines to your init.el file. The file my-hydra.el is a master Hydra for calling other Hydras. You do not need it if you are only going to use the emacs-learning-spiral Hydra.
+- Add the following lines to your init.el file. The file my-hydra.el is a master Hydra for calling other Hydras. You do not need it if you only use the emacs-learning-spiral Hydra.
 
 ```elisp
 (use-package learning-spiral-hydras
@@ -172,7 +172,7 @@ You may have to delete the following line from each Hydra if you lack a master *
 
 # Learning spiral hydra
 Below is a literate programming document.
-It was generated from a buffer in Emacs that contained the Hydras by using the `elispdoc` package found [here](https://github.com/benleis1/elispdoc).
+It was generated using the `elispdoc` package found [here](https://github.com/benleis1/elispdoc).
 This document has been extensively edited subsequently.
 
 This is a nested set of Hydras.
@@ -216,7 +216,7 @@ _q_ quit
 <p align="center"><img src="images/keybindings.png" alt="HTML5 Icon" style="width:600px" /></p>
 
 This hydra in a list of keybindings that I thought I had mastered.
-I list these as a reality check and as a reminder after long gaps in use of these keybindings
+I list these as a reality check and as a reminder after long gaps in the use of these keybindings.
 
 ```elisp
 (defhydra hydra-of-learning-spiral-keybindings-mastered (:hint nil)
@@ -280,7 +280,7 @@ copilot
 
 ^------------------------------------------------------------------------------
 
-_km_ learning spral: keybindings mastered
+_km_ learning spiral: keybindings mastered
 _c_ learning spiral: concepts trying to master
 
 _ls_ Return to learning spiral
@@ -314,12 +314,12 @@ There is a blue-colored letter **n** that you click on to advance to the next hy
 "
  ^Commands trying to master
  --------------------------------------------------------------------------------------------
- C-c =                 Use in auctex-mode to display TOC of the document in a separate buffer
- C-c d                 Display pop-up with info about text file including word count
- C-h l                 Display list of the last commands executed
- s-,                   Open the customize buffer
- C-[scrollwheel-up]    zoom text in
- C-[scrollwheel-down]  zoom text out
+ C-c =                 Use in auctex-mode to display the TOC of the document in a separate buffer.
+ C-c d                 Display pop-up with info about text file, including the word count.
+ C-h l                 Display list of the last commands executed.
+ s-,                   Open the customize buffer.
+ C-[scrollwheel-up]    Zoom text in.
+ C-[scrollwheel-down]  Zoom text out.
 
  M-x delete-trailing-whitespace
  M-x lsp
@@ -352,15 +352,16 @@ There is a blue-colored letter **n** that you click on to advance to the next hy
 ```
 
 ## Funding sources
-NIH: R01 CA242845, R01 AI088011
-NIH: P30 CA225520 (PI: R. Mannel); 
-NIH: P20GM103640 and P30GM145423 (PI: A. West)
+- NIH: R01 CA242845, R01 AI088011
+- NIH: P30 CA225520 (PI: R. Mannel); 
+- NIH: P20GM103640 and P30GM145423 (PI: A. West)
 
 ## Update history
 
-|Version      | Changes                                                                                                                                    | Date                 |
-|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
-| Version 0.6 |  Added funding sources and update table  to README.md.  Fixed typos in README.md                                                                                  | 2024 April 16        |
+|Version        | Changes                                                                                                               | Date                |
+|:--------------|:----------------------------------------------------------------------------------------------------------------------|:--------------------|
+| Version 0.6   |  Added the funding sources and this update table to README.md.  Fixed typos in README.md                              | 2024 April 16       |
+| Version 0.6.1 |  Fixed the alignment of this table.  Further edits of the README.md to improve the grammar.                           | 2024 September 7    |
 
 
 
